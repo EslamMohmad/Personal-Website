@@ -51,7 +51,10 @@
 
 .parent.dark .parnet-sections .section h1,
 .parent.dark .parnet-sections .section p,
-.parent.dark .parnet-sections .section i {
+.parent.dark .parnet-sections .section i,
+.parent.dark .parnet-sections .section h4,
+.parent.dark .parnet-sections .section span,
+.parent.dark .parnet-sections .section-two .foot .bord .content .txt span i {
     color: white;
 }
 
@@ -61,3 +64,9 @@
 }
 /*parent dark-sections*/
 
+
+.parent.dark .parnet-sections .section-two .foot .bord .content {
+    box-shadow: none;
+    background-color: var(--BCLight-dark);
+    border:none;
+}

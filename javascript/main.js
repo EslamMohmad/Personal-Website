@@ -4,7 +4,6 @@ $(function () {
         const ele = $(".parent .nav-bar");
         let winWidth = $(window).innerWidth();
         let remainWidth = winWidth - $(".parent .nav-bar").outerWidth();
-        console.log($(".parent .nav-bar").outerWidth())
         if (winWidth <= 1200) {
             ele.addClass("active")
             $(".parent .parnet-sections").css("width",winWidth)
@@ -43,10 +42,11 @@ $(".parnet-sections .setting .colors li").on("click", function () {
     })
     
     targetElemet.attr("class",$(this).attr("class")) //add class to parent of list [ul]
-    
     $(".parent .nav-bar .row ul li.active")
     .attr("class","heading " + targetElemet.attr("class") + " active")
 
+    //add color to any text
+    $(".color-style").css("color","var(--" + $(this).attr("class") + ")")
 })
 
 $(".parent .nav-bar .row ul li").on("click", function () {
@@ -71,12 +71,18 @@ $(".parnet-sections .input input").on("click", function () {
 $(".bgcolor-style.fas.fa-bars").on("click", function () {
     $(this).toggleClass("fa-times active");
     if ($(this).hasClass("active")) {
-        $(".parent .nav-bar").animate({
-            "left":0
-        })
+        $(".parent .nav-bar").addClass("translated")
     } else {
-        $(".parent .nav-bar").animate({
-            "left":-$(".parent .nav-bar").outerWidth()
-        })
+        $(".parent .nav-bar").removeClass("translated")
     }
+})
+
+//switch between sections
+$(".parent .nav-bar .row ul li").on("click",function () {
+    let ele = $("." + $(this).text());
+    ele.css("z-index","9").animate({
+        "left":"0%"
+    },"fast").siblings(".section").css("z-index","8").delay(500).animate({
+        "left":"100%"
+    }, function () { ele.css("z-index","9") })
 })

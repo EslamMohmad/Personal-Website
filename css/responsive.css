@@ -2,7 +2,12 @@
     .parent .nav-bar {
         position: fixed;
         left: -400px;
+        transition: 0.5s ease-in-out left;
     }
+    .parent .nav-bar.translated {
+        left: 0px;
+    }
+
     .parent .nav-bar .fa-bars {
         display: block;
     }
@@ -12,5 +17,49 @@
     .parent .nav-bar {
         width: 290px;
         left: -290px;
+    }
+}
+@media (max-width:992px) {
+    .parent .parnet-sections .section-two .head .content {
+        flex-direction: column;
+    }
+
+    .parent .parnet-sections .section-two .head .content .bord.one{
+        width: 100%;
+    }
+    .parent .parnet-sections .section-two .head .content .bord.two {
+        width: 70%;
+    }
+
+    .parent .parnet-sections .section-two .head .content .bord.one .data {
+        width: 45%;
+    }
+
+    .parent .parnet-sections .section-two .head .content .bord.one .buttons {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:876px) {
+    .parent .parnet-sections .section-two .row.foot {
+        flex-direction: column;
+    }
+    .parent .parnet-sections .section-two .row.foot .bord {
+        width: 100%;
+    }
+}
+
+@media (max-width:590px) {
+    .parent .parnet-sections .section-two .head .content .bord.two {
+        width: 100%;
+    }
+}
+
+@media (max-width:424px) {
+    .parent .parnet-sections .section-two .head .content .bord.one {
+        flex-direction: column;
+    }
+    .parent .parnet-sections .section-two .head .content .bord.one .data {
+        width:100%;
     }
 }
