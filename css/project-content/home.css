@@ -109,7 +109,7 @@
 
 .parent .parnet-sections .section {
     width: 100%;
-    height:auto;
+    height:100vh;
     position: absolute;
     transition: 0.5s ease-in-out left;
     left: 100%;
