@@ -1,0 +1,16 @@
+@media (max-width:1200px) {
+    .parent .nav-bar {
+        position: fixed;
+        left: -400px;
+    }
+    .parent .nav-bar .fa-bars {
+        display: block;
+    }
+}
+
+@media (max-width:453px) {
+    .parent .nav-bar {
+        width: 290px;
+        left: -290px;
+    }
+}

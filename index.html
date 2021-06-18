@@ -8,30 +8,33 @@
     <link rel="stylesheet" href="icons/css/all.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/parent.css">
+    <link rel="stylesheet" href="css/lightMode.css">
+    <link rel="stylesheet" href="css/darkMode.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>personal webSite</title>
 </head>
 <body>
     <!--start parnet-->
-    <div class="parent">
-
+    <div class="parent light">
         <!--start navBar section-->
         <div class="nav-bar">
             <div class="container">
+                <i class="bgcolor-style fas fa-bars"></i>
                 <div class="txt">
                     <h1 class="heading">
-                        <span class="part after color-option"></span>
+                        <span class="part after bgcolor-style"></span>
                         eslam
-                        <span class="part before color-option"></span>
+                        <span class="part before bgcolor-style"></span>
                     </h1>
                 </div>
                 <div class="row">
-                    <ul>
-                        <li class="heading color-option"><i class="fas fa-home"></i>home</li>
-                        <li class="heading color-option"><i class="fas fa-user"></i>about</li>
-                        <li class="heading color-option"><i class="fas fa-list"></i>service</li>
-                        <li class="heading color-option"><i class="fas fa-briefcase"></i>portofolio</li>
-                        <li class="heading color-option"><i class="fas fa-envelope"></i>blog</li>
-                        <li class="heading color-option"><i class="fas fa-comments"></i>contact</li>
+                    <ul class="redColor">
+                        <li class="heading redColor active"><i class="fas fa-home"></i>home</li>
+                        <li class="heading"><i class="fas fa-user"></i>about</li>
+                        <li class="heading"><i class="fas fa-list"></i>service</li>
+                        <li class="heading"><i class="fas fa-briefcase"></i>portofolio</li>
+                        <li class="heading"><i class="fas fa-envelope"></i>blog</li>
+                        <li class="heading"><i class="fas fa-comments"></i>contact</li>
                     </ul>
                 </div>
             </div>
@@ -40,6 +43,26 @@
 
         <!--start parnet-sections-->
         <div class="parnet-sections">
+            <!--start setting section-->
+            <div class="setting">
+                <div class="icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <h4 class="heading">style switcher</h2>
+                <ul class="colors">
+                    <li class="redColor"></li>
+                    <li class="blueColor"></li>
+                    <li class="OrangeColor"></li>
+                    <li class="YellowColor"></li>
+                    <li class="greenColor"></li>
+                </ul>
+                <h4 class="heading">body style</h2>
+                <div class="input">
+                    <input type="radio" name="style" class="light"><label>light</label>
+                    <input type="radio" name="style" class="dark"><label>dark</label>
+                </div>
+            </div>
+            <!--end setting section-->
             <!--start section one -->
             <div class="section-one section">
                 <div class="container">
@@ -47,11 +70,11 @@
                         <img src="imgs/about.jpg">
                         <h1 class="heading">eslam moo</h1>
                         <p class="text">i'm web developer</p>
-                        <ul>
-                            <li class="color-option"><i class="fab fa-facebook-f"></i></li>
-                            <li class="color-option"><i class="fab fa-twitter"></i></li>
-                            <li class="color-option"><i class="fab fa-instagram"></i></li>
-                            <li class="color-option"><i class="fab fa-linkedin-in"></i></li>
+                        <ul class="soical-icons">
+                            <li class="bgcolor-style"><i class="fab fa-facebook-f"></i></li>
+                            <li class="bgcolor-style"><i class="fab fa-twitter"></i></li>
+                            <li class="bgcolor-style"><i class="fab fa-instagram"></i></li>
+                            <li class="bgcolor-style"><i class="fab fa-linkedin-in"></i></li>
                         </ul>
                     </div>
                 </div>

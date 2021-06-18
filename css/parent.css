@@ -7,7 +7,26 @@
 .parent .nav-bar {
     width: 400px;
     height: 100%;
-    border:1px solid var(--borderLight-light)
+    border-right:1px solid var(--borderLight-light);
+    position: relative;
+    z-index: 0;
+}
+
+.parent .nav-bar .fa-bars,
+.parent .nav-bar .fa-times{
+    position: absolute;
+    color: var(--redColor);
+    top:10px;
+    right: -50px;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    border: 1px solid var(--borderDark-light);
+    cursor: pointer;
+    display: none;
+    background-color: white;
 }
 
 .parent .nav-bar .txt {
@@ -17,15 +36,13 @@
 .parent .nav-bar .txt h1{
     text-align: center;
     font-size: 55px;
-    max-width: 230px;
-    background-color: white;
+    width: 230px;
     position: relative;
     margin: auto;
 }
 
 .parent .nav-bar .txt h1 .part {
     position: absolute;
-    background-color: var(--redColor);
     width: 30px;
     height: 30px;
     z-index: -1;
@@ -56,62 +73,170 @@
     font-size: 22px;
     border-bottom: 1px solid var(--borderLight-light);
     cursor: pointer;
+    transition: 0.5s ease-in-out padding-left;
 }
 
 .parent .nav-bar .row ul li i {
     margin-right: 15px;
 }
+
+.parent .nav-bar .row ul li:hover {
+    padding-left: 25px;
+}
+
+.parent .nav-bar .row ul.redColor li:hover {
+    color: var(--redColor);
+}
+.parent .nav-bar .row ul.blueColor li:hover {
+    color: var(--blueColor);
+}
+.parent .nav-bar .row ul.OrangeColor li:hover {
+    color: var(--OrangeColor);
+}
+.parent .nav-bar .row ul.YellowColor li:hover {
+    color: var(--YellowColor);
+}
+.parent .nav-bar .row ul.greenColor li:hover {
+    color: var(--greenColor);
+}
+
 /*start parent sections*/
 .parent-sections{
     height: 100%;
+    overflow-y: hidden;
+    position: relative;
 }
 
-.parnet-sections .section {
+.parent .parnet-sections .section {
     width: 100%;
     height:100%;
 }
+/*start setting sections*/
+.parent .parnet-sections .setting {
+    position: fixed;
+    right: -250px;
+    top:55px;
+    background-color: white;
+    border:1px solid var(--borderLight-light);
+    width: 250px;
+    border-radius:0 0 0 5px;
+}
+
+.parent .parnet-sections .setting .icon {
+    position: absolute;
+    left: -50px;
+    top:-1.5px;
+    border: 1px solid var(--borderLight-light);
+    width: 50px;
+    height: 52px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.parent .parnet-sections .setting .fa-cog {
+    line-height: 50px;
+    font-size: 25px;
+    animation: rotate 4s linear infinite;
+    cursor:pointer
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.parent .parnet-sections .setting h4,
+.parent .parnet-sections .setting ul.colors,
+.parent .parnet-sections .setting .input {
+    padding: 9px 15px;
+    margin: 0;
+}
+
+.parent .parnet-sections .setting h4,
+.parent .parnet-sections .setting ul.colors {
+    border-bottom:1px solid var(--borderLight-light)
+}
+
+.parent .parnet-sections .setting ul.colors {
+    margin: 0;
+}
+
+.parent .parnet-sections .setting ul.colors li {
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.parent .parnet-sections .setting ul.colors li[class="redColor"] {
+    background-color: var(--redColor);
+}
+
+.parent .parnet-sections .setting ul.colors li[class="blueColor"] {
+    background-color: var(--blueColor);
+}
+
+.parent .parnet-sections .setting ul.colors li[class="OrangeColor"] {
+    background-color: var(--OrangeColor);
+}
+
+.parent .parnet-sections .setting ul.colors li[class="YellowColor"] {
+    background-color: var(--YellowColor);
+}
+.parent .parnet-sections .setting ul.colors li[class="greenColor"] {
+    background-color: var(--greenColor);
+}
+
+.parent .parnet-sections .setting .input label{
+    margin:0 15px 0 5px;
+}
+
+/*end setting sections*/
 /*end parent sections*/
 /*start sections one*/
-.section-one .container,
-.section-one .container .row{
+.parent .parnet-sections .section-one .container,
+.parent .parnet-sections .section-one .container .row{
     height: 100%;
 }
 
-.section-one .container .row{
+.parent .parnet-sections .section-one .container .row{
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.section-one img {
+.parent .parnet-sections .section-one img {
     border-radius: 50%;
     padding: 10px;
     box-shadow:0 0 20px #c0c0c0;
     margin-bottom: 30px;
 }
-.section-one h1 {
+.parent .parnet-sections .section-one h1 {
     font-size: 45px;
     text-shadow: 0 0 5px #646464;
 }
 
-.section-one p {
+.parent .parnet-sections .section-one p {
     font-size: 21px;
     letter-spacing: 1px;
     margin-bottom: 25px;
 }
 
-.section-one ul li {
+.parent .parnet-sections .section-one ul.soical-icons li {
     list-style: none;
     display: inline-block;
     margin: 0 6px;
-    background-color: var(--redColor);
-    color: white;
     width: 45px;
-    height: 45px;
+    height: 45px;   
     line-height: 45px;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
+    background-color: var(--redColor);
+    color: white
 }
-
 /*end sections one*/
