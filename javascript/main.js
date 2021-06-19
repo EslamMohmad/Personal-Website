@@ -47,6 +47,12 @@ $(".parnet-sections .setting .colors li").on("click", function () {
 
     //add color to any text
     $(".color-style").css("color","var(--" + $(this).attr("class") + ")")
+
+    let THIcon = $(".parent .section-three .bord").attr("class","bord " + $(this).attr("class"))
+    $(".parent .section-three .row .content").attr("class","content " + $(this).attr("class"))
+
+    //sections-four ul li
+    $(".parent .section-four .content .filter-list ul li").css("border-color","var(--"+ $(this).attr("class") + ")")
 })
 
 $(".parent .nav-bar .row ul li").on("click", function () {
@@ -85,4 +91,17 @@ $(".parent .nav-bar .row ul li").on("click",function () {
     },"fast").siblings(".section").css("z-index","8").delay(500).animate({
         "left":"100%"
     }, function () { ele.css("z-index","9") })
+})
+
+//section-four filter items 
+$(".parent .section-four .content .filter-list ul li").on("click", function () {
+    $(this).addClass("active").siblings().removeClass("active")
+    let item = $(".bord." + $(this).text());
+    const parent = $(".parent .section-four .content .grid").children()
+    if ($(this).text() == "all") {
+        parent.fadeIn()
+    } else {
+        parent.fadeOut()
+        item.fadeIn()
+    }
 })

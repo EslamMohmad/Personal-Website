@@ -54,7 +54,8 @@
 .parent.dark .parnet-sections .section i,
 .parent.dark .parnet-sections .section h4,
 .parent.dark .parnet-sections .section span,
-.parent.dark .parnet-sections .section-two .foot .bord .content .txt span i {
+.parent.dark .parnet-sections .section-two .foot .bord .content .txt span i,
+.parent.dark .section-four .content .filter-list ul li {
     color: white;
 }
 
@@ -65,8 +66,15 @@
 /*parent dark-sections*/
 
 
-.parent.dark .parnet-sections .section-two .foot .bord .content {
+.parent.dark .parnet-sections .section-two .foot .bord .content,
+.parent.dark .section-three .row .content .bord {
     box-shadow: none;
     background-color: var(--BCLight-dark);
     border:none;
+}
+
+.parent.dark .section-four .content .grid .bord {
+    background-color: var(--BCLight-dark);
+    border: none;
+    padding: 10px;
 }

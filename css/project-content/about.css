@@ -1,35 +1,4 @@
-.parent .parnet-sections .section-two .container {
-    max-width: 100%;
-}
-
-.parent .parnet-sections .section-two .container .row{
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    padding-top: 100px;
-    margin: 0 25px;
-    height: auto;
-}
-
 /*start head row*/
-.parent .parnet-sections .section-two .head .head h1 {
-    font-size: 50px;
-    font-weight: bolder;
-    margin-bottom: 50px;
-}
-
-.parent .parnet-sections .section-two .head h1 hr{
-    margin: 0;
-    margin-bottom: 5px;
-    height: 3px;
-    width: 65px;
-    background-color: var(--redColor);
-}
-
-.parent .parnet-sections .section-two .head h1 hr.short {
-    width: 45px;
-}
-
 .parent .parnet-sections .section-two .head h4 {
     font-size: 25px;
     margin-bottom: 20px;
@@ -124,7 +93,7 @@
 .parent .parnet-sections .section-two .row.foot {
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
 } 
 
 .parent .parnet-sections .section-two .foot .bord {
@@ -147,7 +116,7 @@
     position: absolute;
     left: 20px;
     top:50%;
-    height: 89%;
+    height: 90%;
     width: 1px;
     transform: rotate(0deg) translateY(-50%);
     background-color: var(--redColor);
@@ -156,6 +125,19 @@
 
 .parent .parnet-sections .section-two .foot .bord .content .txt:not(:last-child) {
     margin-bottom: 40px;
+}
+
+.parent .parnet-sections .section-two .foot .bord .content .txt {
+    position: relative;
+}
+
+.parent .parnet-sections .section-two .foot .bord .content .txt .red-disc {
+    position: absolute;
+    left: -24.2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--redColor);
 }
 
 .parent .parnet-sections .section-two .foot .bord .content .txt span i {

@@ -1,0 +1,66 @@
+.parent .section-three {
+    overflow:auto;
+}
+
+.parent .section-three .row .content .bord {
+    padding: 25px 20px;
+    border: 1px solid var(--borderDark-light);
+    transition: 0.2s ease-in-out box-shadow;
+    border-radius: 5px;
+}
+
+.parent .section-three .row .content .bord:hover {
+    box-shadow: 0 0 10px 3px #d8d8d8;
+}
+
+.parent .section-three .row .content .bord i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    color: var(--redColor);
+}
+
+.parent .section-three .row .content .bord.redColor i{
+    color:var(--redColor)
+}
+.parent .section-three .row .content .blueColor i{
+
+    color:var(--blueColor)
+}
+.parent .section-three .row .content .bord.OrangeColor i{
+    color:var(--OrangeColor)
+}
+.parent .section-three .row .content .bord.YellowColor i{
+    color:var(--YellowColor)
+}
+.parent .section-three .row .content .bord.greenColor i{
+    color:var(--greenColor)
+}
+
+.parent .section-three .row .content .bord:hover i{
+    color:white;
+    background-color: var(--redColor);
+}
+
+.parent .section-three .row .content.redColor .bord:hover i{
+    background-color: var(--redColor);
+}
+.parent .section-three .row .content.blueColor .bord:hover i{
+    background-color: var(--blueColor);
+}
+.parent .section-three .row .content.OrangeColor .bord:hover i{
+    background-color: var(--OrangeColor);
+}
+.parent .section-three .row .content.YellowColor .bord:hover i{
+    background-color: var(--YellowColor);
+}
+.parent .section-three .row .content.greenColor .bord:hover i{
+    background-color: var(--greenColor);
+}
+
+.parent .section-three .row .content .bord h4 {
+    margin-bottom: 20px;
+}
