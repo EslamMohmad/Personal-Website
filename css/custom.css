@@ -31,6 +31,8 @@
     --borderDark-light:#d4d4e3;
     --borderLight-light:#e8dfec;
     /*end body-light color*/
+    
+    --boxShadow:lightgray
 }
 
 .heading {
@@ -81,15 +83,5 @@
 }
 /*all sections configurations*/
 
-/*all grid view*/
-.parent .section .row .grid {
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: repeat(3,30%);
-    grid-template-rows: repeat(2,45%);
-    justify-content: space-between;
-    grid-row-gap: 30px;
-    grid-column-gap: 20px;
-    text-align: center;
-}
+
 

@@ -67,23 +67,25 @@
         width: 100%;
     }
 }
-
+/*start portofolio  section*/
 @media (max-width:1450px) {
+    .parent .section .row .content.grid, 
     .parent .section .row .grid {
         grid-template-columns: repeat(2,auto);
         grid-template-rows: repeat(3,auto);
         padding-bottom: 30px;
     }
-}
 
-
-@media (max-width:1200px) {
-    .parent.dark .section-four .content .grid {
-        grid-template-columns: repeat(3,auto);
-        grid-template-rows: repeat(2,auto);
+    .parent .section-five .content {
+        flex-wrap: wrap;
     }
-}
 
+    .parent .section-five .content .bord {
+        width: 47%;
+        margin-bottom: 20px;
+    }
+
+}
 @media (max-width:1000px) {
     .parent.dark .section-four .content .grid {
         grid-template-columns: repeat(2,auto);
@@ -91,14 +93,32 @@
     }
 }
 
+@media (max-width:749px) {
+    .parent .section-five .content .bord {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width:576px) {
-    .parent .section .row .grid,
-    .parent.dark .section-four .content .grid {
+    .parent .section .row .content.grid,
+    .parent .section .row .grid{
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(6,auto);
+        padding-bottom: 20px;
     }
 
-    
+    .parent .section .row .grid.short{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(2,auto);
+        padding-bottom: 20px;
+    }
+
+    .parent.dark .section-four .content .grid {
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(2,auto);
+    }
+
 }
 
 @media (max-width:400px) {
@@ -106,3 +126,31 @@
         margin-right: 5px;
     }
 }
+/*end portofolio  section*/
+/*start content  section*/
+@media (max-width:778px) {
+    .parent .section-six .content .head {
+        flex-direction: column;
+    }
+
+    .parent .section-six .content .head .bord {
+        width: 100%;
+    }
+
+    .parent .section-six .content .head .bord:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .parent .section-six .content .foot input.half {
+        width: 100%;
+    }
+
+    .parent .section-six .content .foot input.half:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .parent .section-six .content .foot textarea {
+        margin-top: 0;
+    }
+}
+/*end content  section*/

@@ -98,6 +98,7 @@
 
 .parent .parnet-sections .section-two .foot .bord {
     width: 49%;
+    margin-bottom:40px;
 }
 
 .parent .parnet-sections .section-two .foot .bord h1 {
@@ -105,11 +106,10 @@
 }
 
 .parent .parnet-sections .section-two .foot .bord .content {
-    box-shadow: 0 0 15px 0px #b4b3b3;
+    box-shadow: 0 0 15px 0px var(--boxShadow);
     padding: 25px 40px;
     position: relative;
     border-radius: 5px;
-    margin-bottom: 50px;
 }
 
 .parent .parnet-sections .section-two .foot .bord .content hr {
@@ -124,7 +124,7 @@
 }
 
 .parent .parnet-sections .section-two .foot .bord .content .txt:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .parent .parnet-sections .section-two .foot .bord .content .txt {

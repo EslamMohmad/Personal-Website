@@ -78,3 +78,22 @@
     border: none;
     padding: 10px;
 }
+
+.parent.dark .section-five .content .bord {
+    box-shadow: none    ;
+}
+
+.parent.dark .section-five .content .bord .txt {
+    background-color: var(--BCLight-dark);
+}
+
+.parent.dark .section-six .content .foot input,
+.parent.dark .section-six .content .foot textarea{
+    background-color: var(--BCLight-dark);
+    border: none;
+    color: white;
+}
+
+.parent.dark .section-six .content .head .bord {
+    background-color: var(--BCLight-dark);
+}

@@ -1,0 +1,50 @@
+.parent .section-five .content {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent .section-five .content .bord {
+    width: 32%;
+    min-height: 400px;
+    box-shadow: 0 0 10px 2px var(--boxShadow);
+}
+
+.parent .section-five .content .bord .img {
+    position: relative;
+}
+
+.parent .section-five .content .bord img {
+    width: 100%;
+    height: 100%;
+}
+
+.parent .section-five .content .bord .img span.float {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: var(--redColor);
+    color: white;
+    padding: 5px 10px;
+    border-radius:5px ;
+}
+
+.parent .section-five .content .bord .txt {
+    padding: 0 15px;
+}
+
+.parent .section-five .content .bord .txt h4 {
+    padding: 15px 0;
+}
+
+.parent .section-five .content .bord .txt p.tag {
+    padding-bottom: 20px;
+}
+
+.parent .section-five .content .bord .txt p.tag span {
+    color:var(--redColor);
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 6px;
+}

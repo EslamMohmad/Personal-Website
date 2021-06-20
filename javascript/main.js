@@ -49,12 +49,13 @@ $(".parnet-sections .setting .colors li").on("click", function () {
     $(".color-style").css("color","var(--" + $(this).attr("class") + ")")
 
     let THIcon = $(".parent .section-three .bord").attr("class","bord " + $(this).attr("class"))
-    $(".parent .section-three .row .content").attr("class","content " + $(this).attr("class"))
+    $(".parent .section-three .row .content").attr("class","content grid " + $(this).attr("class"))
 
     //sections-four ul li
     $(".parent .section-four .content .filter-list ul li").css("border-color","var(--"+ $(this).attr("class") + ")")
 })
 
+//when click on nav-bar items
 $(".parent .nav-bar .row ul li").on("click", function () {
     $(this).addClass("heading " + targetElemet.attr("class") + " active")
     .siblings().removeClass("" + targetElemet.attr("class") + " active")
@@ -88,7 +89,7 @@ $(".parent .nav-bar .row ul li").on("click",function () {
     let ele = $("." + $(this).text());
     ele.css("z-index","9").animate({
         "left":"0%"
-    },"fast").siblings(".section").css("z-index","8").delay(500).animate({
+    },"fast").siblings(".section").css("z-index","8").delay(650).animate({
         "left":"100%"
     }, function () { ele.css("z-index","9") })
 })
@@ -99,9 +100,19 @@ $(".parent .section-four .content .filter-list ul li").on("click", function () {
     let item = $(".bord." + $(this).text());
     const parent = $(".parent .section-four .content .grid").children()
     if ($(this).text() == "all") {
-        parent.fadeIn()
+        parent.fadeIn().parent().removeClass("short")
     } else {
-        parent.fadeOut()
-        item.fadeIn()
+        parent.fadeOut(function () { parent.parent().addClass("short") })
+        item.delay(400).fadeIn()
     }
+})
+
+//section-four on click img 
+$(".parent .section-four .content .items .bord .fa-search").on("click", function () {
+    let ele = $(this).parent().siblings().attr("src")
+    const overLay = $(".parent .section-four .over-lay");
+    overLay.fadeIn().css("display","flex").on("click", function() { $(this).fadeOut() })
+    overLay.find(".slide")
+    .on("click", function (e) { e.stopPropagation() })
+    .attr("src",ele)
 })

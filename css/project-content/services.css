@@ -3,14 +3,25 @@
 }
 
 .parent .section-three .row .content .bord {
-    padding: 25px 20px;
+    padding: 45px 20px;
     border: 1px solid var(--borderDark-light);
     transition: 0.2s ease-in-out box-shadow;
     border-radius: 5px;
+    height: 320px;
 }
 
 .parent .section-three .row .content .bord:hover {
     box-shadow: 0 0 10px 3px #d8d8d8;
+}
+
+.parent .section-three .row .content.grid {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    justify-content: space-between;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    text-align: center;
 }
 
 .parent .section-three .row .content .bord i {
