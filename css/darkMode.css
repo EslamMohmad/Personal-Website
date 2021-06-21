@@ -1,52 +1,41 @@
-/*nav-bar dark*/
-.parent.dark .nav-bar {
-    background-color: var(--BCLight-dark);
-    border: none;
-}
-
-.parent.dark .nav-bar  .bgcolor-style.fas.fa-bars.active {
-    color: var(--redColor);
+.parent.dark .parnet-sections .section-one img {
     background-color: white;
+}
+
+.parent.dark .parnet-sections .section-two .foot .bord .content,
+.parent.dark .section-three .row .content .bord,
+.parent.dark .parnet-sections .section-one .main-img,
+.parent.dark .section-five .content .bord {
+    box-shadow: none;
+}
+
+.parent.dark .section-four .content .grid .bord {
+    padding: 10px;
+}
+
+.parent.dark .section-four .content .grid .bord
+.parent.dark .parnet-sections .section-two .foot .bord .content,
+.parent.dark .section-three .row .content .bord,
+.parent.dark .section-six .content .foot input,
+.parent.dark .section-six .content .foot textarea,
+.parent.dark .nav-bar{
     border: none;
 }
 
-.parent.dark .nav-bar h1{
-    color: white;
-    background-color: var(--BCLight-dark);
-}
-
-.parent.dark .nav-bar .txt h1 .part {
-    background-color: var(--redColor);
-}
-
-.parent.dark .nav-bar .row li {
-    color: white;
-}
-
-.parent.dark .nav-bar .row li.redColor {
-    color:var(--redColor)
-}
-
-.parent.dark .nav-bar .row li.blueColor {
-    color:var(--blueColor)
-}
-
-.parent.dark .nav-bar .row li.OrangeColor {
-    color:var(--OrangeColor)
-}
-
-.parent.dark .nav-bar .row li.YellowColor {
-    color:var(--YellowColor)
-}
-
-.parent.dark .nav-bar .row li.greenColor {
-    color:var(--greenColor)
-}
-
-/*nav-bar dark*/
-/*parent dark-sections*/
 .parent.dark .parnet-sections .section {
     background-color: var(--BCDark-dark);
+}
+
+.parent.dark .nav-bar,
+.parent.dark .nav-bar h1,
+.parent.dark .section-two .foot .bord .content,
+.parent.dark .section-three .row .content .bord,
+.parent.dark .section-four .content .grid .bord,
+.parent.dark .section-five .content .bord .txt,
+.parent.dark .section-six .content .foot input,
+.parent.dark .section-six .content .foot textarea,
+.parent.dark .section-six .content .head .bord {
+    background-color: var(--BCLight-dark);
 }
 
 .parent.dark .parnet-sections .section h1,
@@ -55,45 +44,10 @@
 .parent.dark .parnet-sections .section h4,
 .parent.dark .parnet-sections .section span,
 .parent.dark .parnet-sections .section-two .foot .bord .content .txt span i,
-.parent.dark .section-four .content .filter-list ul li {
-    color: white;
-}
-
-.parent.dark .parnet-sections .section-one img {
-    box-shadow: none;
-    background-color: white;
-}
-/*parent dark-sections*/
-
-
-.parent.dark .parnet-sections .section-two .foot .bord .content,
-.parent.dark .section-three .row .content .bord {
-    box-shadow: none;
-    background-color: var(--BCLight-dark);
-    border:none;
-}
-
-.parent.dark .section-four .content .grid .bord {
-    background-color: var(--BCLight-dark);
-    border: none;
-    padding: 10px;
-}
-
-.parent.dark .section-five .content .bord {
-    box-shadow: none    ;
-}
-
-.parent.dark .section-five .content .bord .txt {
-    background-color: var(--BCLight-dark);
-}
-
+.parent.dark .section-four .content .filter-list ul li,
+.parent.dark .nav-bar h1,
+.parent.dark .nav-bar .row li[class="heading"],
 .parent.dark .section-six .content .foot input,
-.parent.dark .section-six .content .foot textarea{
-    background-color: var(--BCLight-dark);
-    border: none;
+.parent.dark .section-six .content .foot textarea {
     color: white;
-}
-
-.parent.dark .section-six .content .head .bord {
-    background-color: var(--BCLight-dark);
 }

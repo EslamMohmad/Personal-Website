@@ -10,6 +10,7 @@
     border-right:1px solid var(--borderLight-light);
     position: relative;
     z-index: 99999;
+    background-color: var(--BCDark-light);
 }
 
 .parent .nav-bar .fa-bars,
@@ -39,6 +40,7 @@
     width: 230px;
     position: relative;
     margin: auto;
+    background-color: var(--BCDark-light);
 }
 
 .parent .nav-bar .txt h1 .part {
@@ -46,6 +48,7 @@
     width: 30px;
     height: 30px;
     z-index: -1;
+    background-color: var(--redColor);
 }
 
 .parent .nav-bar .txt h1 .part.after {
@@ -100,11 +103,32 @@
     color: var(--greenColor);
 }
 
+.parent .nav-bar .row li.redColor {
+    color:var(--redColor)
+}
+
+.parent .nav-bar .row li.blueColor {
+    color:var(--blueColor)
+}
+
+.parent .nav-bar .row li.OrangeColor {
+    color:var(--OrangeColor)
+}
+
+.parent .nav-bar .row li.YellowColor {
+    color:var(--YellowColor)
+}
+
+.parent .nav-bar .row li.greenColor {
+    color:var(--greenColor)
+}
+
 /*start parent sections*/
 .parnet-sections{
     height: 100%;
     overflow: hidden;
     position: relative;
+    background-color: var(--BCLight-light)
 }
 
 .parent .parnet-sections .section {
@@ -114,6 +138,7 @@
     transition: 0.5s ease-in-out left;
     left: 100%;
     overflow:auto;
+    background-color: var(--BCDark-light);
 }
 
 .parent .parnet-sections .section.active {
@@ -223,12 +248,25 @@
     overflow: hidden;
 }
 
-.parent .parnet-sections .section-one img {
+.parent .parnet-sections .section-one .main-img {
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
     padding: 10px;
     box-shadow:0 0 20px #c0c0c0;
     margin-bottom: 30px;
+    background-color: white;
+    overflow: hidden;
 }
+
+.parent .parnet-sections .section-one .main-img .img {
+    background-image: url(../../imgs/about.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 .parent .parnet-sections .section-one h1 {
     font-size: 45px;
     text-shadow: 0 0 5px #646464;

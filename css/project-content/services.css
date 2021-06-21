@@ -34,20 +34,20 @@
     color: var(--redColor);
 }
 
-.parent .section-three .row .content .bord.redColor i{
+.parent .section-three .row .content.redColor .bord i{
     color:var(--redColor)
 }
-.parent .section-three .row .content .blueColor i{
+.parent .section-three .row .content.blueColor .bord i{
 
     color:var(--blueColor)
 }
-.parent .section-three .row .content .bord.OrangeColor i{
+.parent .section-three .row .content.OrangeColor .bord i{
     color:var(--OrangeColor)
 }
-.parent .section-three .row .content .bord.YellowColor i{
+.parent .section-three .row .content.YellowColor .bord i{
     color:var(--YellowColor)
 }
-.parent .section-three .row .content .bord.greenColor i{
+.parent .section-three .row .content.greenColor .bord i{
     color:var(--greenColor)
 }
 
