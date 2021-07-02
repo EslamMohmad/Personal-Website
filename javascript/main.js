@@ -135,11 +135,21 @@ $(window).ready(function () {
             currentClass = window.sessionStorage.getItem("currentColorClass");
 
         $(".parent").attr("class",mood);
+        
         $(".bgcolor-style").css("background-color",currentColor)
         $(".color-style").css("color",currentColor)
 
         $(".parent .nav-bar .row ul").attr("class",currentClass)
+        
         $(".parent .nav-bar .row ul li.active").attr("class","heading " + currentClass + " active")
+        if ($(".parent .nav-bar .row ul li").hasClass("null")) {
+            $(".parent .nav-bar .row ul li.active").attr("class","heading redColor active")
+            .parent().attr("class","redColor")
+        } else {
+            $(".parent .nav-bar .row ul li.active").attr("class","heading " + currentClass + " active")
+            .parent().attr("class",currentClass)
+        }
+
         $(".parent .section-three .row .content").attr("class","content grid " + currentClass)
         $(".parent .section-four .content .filter-list ul").attr("class", currentClass)
 
