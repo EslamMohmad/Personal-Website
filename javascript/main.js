@@ -140,7 +140,7 @@ $(window).ready(function () {
         $(".color-style").css("color",currentColor)
 
         $(".parent .nav-bar .row ul").attr("class",currentClass)
-        
+
         $(".parent .nav-bar .row ul li.active").attr("class","heading " + currentClass + " active")
         if ($(".parent .nav-bar .row ul li").hasClass("null")) {
             $(".parent .nav-bar .row ul li.active").attr("class","heading redColor active")
@@ -157,13 +157,15 @@ $(window).ready(function () {
 
     //check if sessionStorage is empty or not
     $(function () {
-        if (window.sessionStorage.length > 1) {
+        if (window.sessionStorage.length >= 1) {
             local()
             inputRadioCheck()
         } else {
             inputRadioCheck()
         }
     })
+
+    sessionStorage.removeItem("IsThisFirstTime_Log_From_LiveServer");
     
     //close nav-bar
     $(function () {
