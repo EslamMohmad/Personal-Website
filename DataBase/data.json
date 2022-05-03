@@ -1,0 +1,37 @@
+{
+  "health": [
+    {
+      "template-link": "https://eslammohmad.github.io/Clinika-Template/",
+      "template-name": "Clinika",
+      "img-local-src": "imgs/templateImgs/Clinika-min.png"
+    }
+  ],
+  "develop": [
+    {
+      "template-link": "https://eslammohmad.github.io/PUG-Template/",
+      "template-name": "Develop",
+      "img-local-src": "imgs/templateImgs/Develop-min.png"
+    }
+  ],
+  "gaming": [
+    {
+      "template-link": "https://eslammohmad.github.io/GAMIX-Template/",
+      "template-name": "GAMIX",
+      "img-local-src": "imgs/templateImgs/GAMIX-min.png"
+    }
+  ],
+  "bootstrap": [
+    {
+      "template-link": "https://eslammohmad.github.io/Bootstrap-4-Template/",
+      "template-name": "EliteCorp",
+      "img-local-src": "imgs/templateImgs/Bootstrap-4-min.png"
+    }
+  ],
+  "industrial": [
+    {
+      "template-link": "https://eslammohmad.github.io/SASS-Template/",
+      "template-name": "Industrial",
+      "img-local-src": "imgs/templateImgs/Industrial-min.png"
+    }
+  ]
+}

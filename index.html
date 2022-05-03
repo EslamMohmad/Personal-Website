@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="that is my personal website"> 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="icons/css/all.min.css">
-    <link rel="stylesheet" href="css/project-content/home.css">
-    <link rel="stylesheet" href="css/project-content/about.css">
-    <link rel="stylesheet" href="css/project-content/services.css">
-    <link rel="stylesheet" href="css/project-content/portofolio.css">
-    <link rel="stylesheet" href="css/project-content/blog.css">
-    <link rel="stylesheet" href="css/project-content/contact.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/darkMode.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="imgs/title.png"/>
     <title>personal webSite</title>
 </head>
 <body>
@@ -46,7 +40,7 @@
         <!--end navBar section-->
 
         <!--start parnet-sections-->
-        <div class="parnet-sections">
+        <div class="parnet-sections" data-scrollbar-color="redColor">
             <!--start setting section-->
             <div class="setting">
                 <div class="icon">
@@ -77,10 +71,11 @@
                         <h1 class="heading">eslam moo</h1>
                         <p class="text">i'm web developer</p>
                         <ul class="soical-icons">
-                            <li class="bgcolor-style"><i class="fab fa-facebook-f"></i></li>
-                            <li class="bgcolor-style"><i class="fab fa-twitter"></i></li>
-                            <li class="bgcolor-style"><i class="fab fa-instagram"></i></li>
-                            <li class="bgcolor-style"><i class="fab fa-linkedin-in"></i></li>
+                            <li><a class="bgcolor-style" target="_blank" href="https://www.facebook.com/eslammohmad998"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="bgcolor-style" target="_blank" href="https://github.com/EslamMohmad"><i class="fab fa-github"></i></a></li>
+                            <li><a class="bgcolor-style" target="_blank" href="https://www.instagram.com/eslammoodev"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="bgcolor-style" target="_blank" href="https://www.linkedin.com/in/eslam-mohmad-eisa-01b479203/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="bgcolor-style" target="_blank" href="https://codepen.io/eslammohmad"><i class="fab fa-codepen"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -108,11 +103,11 @@
                                     <p class="heading">birthdat :<span class="text">31/5/1998</span></p>
                                     <p class="heading">age :<span class="text">22</span></p>
                                     <p class="heading">websits :<span class="text">eslam</span></p>
-                                    <p class="heading">email :<span class="text">info@gmail.com</span></p>
+                                    <p class="heading">email :<span class="text"> eslammohmad998@gmail.com</span></p>
                                 </div>
                                 <div class="data">
                                     <p class="heading">degree :<span class="text">CIS</span></p>
-                                    <p class="heading">Phone :<span class="text">0123456789</span></p>
+                                    <p class="heading">Phone :<span class="text">01002623871</span></p>
                                     <p class="heading">city :<span class="text">cairo</span></p>
                                     <p class="heading">Freelance :<span class="text">available</span></p>
                                 </div>
@@ -124,27 +119,27 @@
                             <div class="bord two">
                                 <div class="progress">
                                     <div class="perc">
-                                        <p class="heading">javascript ES6 & C++<span class="text">80%</span></p>
+                                        <p id="progressbar-one" class="heading">javascript ES6 & React.js<span class="text">80%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" role="progressbar" style="width:80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-one" role="progressbar" style="width:80%"></div>
                                 </div>
                                 <div class="progress">
                                     <div class="perc">
-                                        <p class="heading">HTML5 & CSS3<span class="text">90%</span></p>
+                                        <p id="progressbar-two" class="heading">HTML5 & CSS3<span class="text">90%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-two" role="progressbar" style="width: 90%"></div>
                                 </div>
                                 <div class="progress">
                                     <div class="perc">
-                                        <p class="heading">bootstrap 4<span class="text">70%</span></p>
+                                        <p id="progressbar-three" class="heading">bootstrap 5<span class="text">70%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-three" role="progressbar" style="width: 70%"></div>
                                 </div>
                                 <div class="progress">
                                     <div class="perc">
-                                        <p class="heading">AJAX-JSON & web API<span class="text">65%</span></p>
+                                        <p id="progressbar-four" class="heading">AJAX-JSON & web API<span class="text">65%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-four" role="progressbar" style="width: 65%"></div>
                                 </div>
                             </div>
                         </div>
@@ -266,13 +261,8 @@
             </div>
             <!--end section three -->
             <!--start section four -->
-            <div class="section-four flex-start section portofolio">
+            <div class="section-four flex-start section portofolio"> 
                 <div class="container">
-                    <div class="over-lay">
-                        <div class="slider">
-                            <img class="slide">
-                        </div>
-                    </div>
                     <div class="row">
                         <h1 class="heading top">
                             portofolio
@@ -283,54 +273,15 @@
                             <div class="filter-list">
                                 <ul>
                                     <li class="heading active">all</li>
-                                    <li class="heading">design</li>
+                                    <li class="heading">health</li>
                                     <li class="heading">develop</li>
-                                    <li class="heading">shots</li>
+                                    <li class="heading">gaming</li>
+                                    <li class="heading">bootstrap</li>
+                                    <li class="heading">industrial</li>
                                 </ul>
                             </div>
                             <div class="items grid">
-                                <div class="bord design">
-                                    <img src="imgs/portfolio/1.jpg">
-                                    <div class="overlay">
-                                        <h2>web design</h2>
-                                        <i class="color-style fas fa-search"></i>
-                                    </div>
-                                </div>
-                                <div class="bord develop">
-                                    <img src="imgs/portfolio/2.jpg">
-                                    <div class="overlay">
-                                        <h2>web design</h2>
-                                        <i class="color-style fas fa-search"></i>
-                                    </div>
-                                </div>
-                                <div class="bord design">
-                                    <img src="imgs/portfolio/3.jpg">
-                                    <div class="overlay">
-                                        <h2>web design</h2>
-                                        <i class="color-style fas fa-search"></i>
-                                    </div>
-                                </div>
-                                <div class="bord develop">
-                                    <img src="imgs/portfolio/4.jpg">
-                                    <div class="overlay">
-                                        <h2>web design</h2>
-                                        <i class="color-style fas fa-search"></i>
-                                    </div>
-                                </div>
-                                <div class="bord shots">
-                                    <img src="imgs/portfolio/5.jpg">
-                                    <div class="overlay">
-                                        <h2>web design</h2>
-                                        <i class="color-style fas fa-search"></i>
-                                    </div>
-                                </div>
-                                <div class="bord shots">
-                                    <img src="imgs/portfolio/6.jpg">
-                                    <div class="overlay">
-                                        <h2>web design</h2>
-                                        <i class="color-style fas fa-search"></i>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -349,7 +300,7 @@
                         <div class="content">
                             <div class="bord">
                                 <div class="img">
-                                    <img src="imgs/blog/1.jpg">
+                                    <img alt="responsive web design" src="imgs/blog/1.jpg">
                                     <span class="bgcolor-style float">4 may 2021</span>
                                 </div>
                                 <div class="txt">
@@ -363,7 +314,7 @@
                             </div>
                             <div class="bord">
                                 <div class="img">
-                                    <img src="imgs/blog/2.jpg">
+                                    <img alt="Creative Slideshow" src="imgs/blog/2.jpg">
                                     <span class="bgcolor-style float">4 may 2021</span>
                                 </div>
                                 <div class="txt">
@@ -377,7 +328,7 @@
                             </div>
                             <div class="bord">
                                 <div class="img">
-                                    <img src="imgs/blog/3.jpg">
+                                    <img alt="Image Gallery Lightbox" src="imgs/blog/3.jpg">
                                     <span class="bgcolor-style float">4 may 2021</span>
                                 </div>
                                 <div class="txt">
@@ -439,7 +390,6 @@
     <!--start parnet-->
     <!--start script file-->
     <script src="javascript/jquery-3.6.0.min.js"></script>
-    <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/main.js"></script>
     <!--end script file-->
 </body>

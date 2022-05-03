@@ -1,0 +1,10 @@
+@import url("project-content/home.css");
+@import url("project-content/about.css");
+@import url("project-content/services.css");
+@import url("project-content/portofolio.css");
+@import url("project-content/blog.css");
+@import url("project-content/contact.css");
+
+@import url("custom.css");
+@import url("darkMode.css");
+@import url("responsive.css");

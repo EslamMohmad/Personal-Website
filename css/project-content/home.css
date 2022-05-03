@@ -1,294 +1,298 @@
 .parent {
-    width: 100%;
-    height: 100vh;
-    display: flex;
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 
 .parent .nav-bar {
-    width: 400px;
-    height: 100%;
-    border-right:1px solid var(--borderLight-light);
-    position: relative;
-    z-index: 99999;
-    background-color: var(--BCDark-light);
+  width: 400px;
+  height: 100%;
+  border-right: 1px solid var(--borderLight-light);
+  position: relative;
+  z-index: 99999;
+  background-color: var(--BCDark-light);
 }
 
 .parent .nav-bar .fa-bars,
-.parent .nav-bar .fa-times{
-    position: absolute;
-    color: var(--redColor);
-    top:10px;
-    right: -50px;
-    width: 40px;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    border: 1px solid var(--borderDark-light);
-    cursor: pointer;
-    display: none;
-    background-color: white;
+.parent .nav-bar .fa-times {
+  position: absolute;
+  color: var(--redColor);
+  top: 10px;
+  right: -50px;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  border: 1px solid var(--borderDark-light);
+  cursor: pointer;
+  display: none;
+  background-color: white;
 }
 
 .parent .nav-bar .txt {
-    padding:100px 0 150px 0;
+  padding: 100px 0 150px 0;
 }
 
-.parent .nav-bar .txt h1{
-    text-align: center;
-    font-size: 55px;
-    width: 230px;
-    position: relative;
-    margin: auto;
-    background-color: var(--BCDark-light);
+.parent .nav-bar .txt h1 {
+  text-align: center;
+  font-size: 55px;
+  width: 230px;
+  position: relative;
+  margin: auto;
+  background-color: var(--BCDark-light);
 }
 
 .parent .nav-bar .txt h1 .part {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    z-index: -1;
-    background-color: var(--redColor);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  background-color: var(--redColor);
 }
 
 .parent .nav-bar .txt h1 .part.after {
-    right: -7px;
-    bottom: -7px;
+  right: -7px;
+  bottom: -7px;
 }
 
 .parent .nav-bar .txt h1 .part.before {
-    top:-7px;
-    left:-7px;
+  top: -7px;
+  left: -7px;
 }
 
 .parent .nav-bar .row {
-    margin:0 30px;
+  margin: 0 30px;
 }
 
 .parent .nav-bar .row ul {
-    width: 100%;
-    list-style: none;
+  width: 100%;
+  list-style: none;
 }
 
 .parent .nav-bar .row ul li {
-    padding: 13px 20px;
-    padding-left: 0;
-    font-size: 22px;
-    border-bottom: 1px solid var(--borderLight-light);
-    cursor: pointer;
-    transition: 0.5s ease-in-out padding-left;
+  padding: 13px 20px;
+  padding-left: 0;
+  font-size: 22px;
+  border-bottom: 1px solid var(--borderLight-light);
+  cursor: pointer;
+  transition: 0.5s ease-in-out padding-left;
 }
 
 .parent .nav-bar .row ul li i {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .parent .nav-bar .row ul li:hover {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .parent .nav-bar .row ul.redColor li:hover {
-    color: var(--redColor);
+  color: var(--redColor);
 }
 .parent .nav-bar .row ul.blueColor li:hover {
-    color: var(--blueColor);
+  color: var(--blueColor);
 }
 .parent .nav-bar .row ul.OrangeColor li:hover {
-    color: var(--OrangeColor);
+  color: var(--OrangeColor);
 }
 .parent .nav-bar .row ul.YellowColor li:hover {
-    color: var(--YellowColor);
+  color: var(--YellowColor);
 }
 .parent .nav-bar .row ul.greenColor li:hover {
-    color: var(--greenColor);
+  color: var(--greenColor);
 }
 
 .parent .nav-bar .row li.redColor {
-    color:var(--redColor)
+  color: var(--redColor);
 }
 
 .parent .nav-bar .row li.blueColor {
-    color:var(--blueColor)
+  color: var(--blueColor);
 }
 
 .parent .nav-bar .row li.OrangeColor {
-    color:var(--OrangeColor)
+  color: var(--OrangeColor);
 }
 
 .parent .nav-bar .row li.YellowColor {
-    color:var(--YellowColor)
+  color: var(--YellowColor);
 }
 
 .parent .nav-bar .row li.greenColor {
-    color:var(--greenColor)
+  color: var(--greenColor);
 }
 
 /*start parent sections*/
-.parnet-sections{
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: var(--BCLight-light)
+.parnet-sections {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--BCLight-light);
 }
 
 .parent .parnet-sections .section {
-    width: 100%;
-    height:100vh;
-    position: absolute;
-    transition: 0.5s ease-in-out left;
-    left: 100%;
-    overflow:auto;
-    background-color: var(--BCDark-light);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  transition: 0.5s ease-in-out left;
+  left: 100%;
+  overflow: auto;
+  background-color: var(--BCDark-light);
 }
 
 .parent .parnet-sections .section.active {
-    left: 0%;
+  left: 0%;
 }
 
 /*start setting sections*/
 .parent .parnet-sections .setting {
-    position: fixed;
-    right: -250px;
-    top:55px;
-    background-color: white;
-    border:1px solid var(--borderLight-light);
-    width: 250px;
-    border-radius:0 0 0 5px;
-    z-index: 99999;
+  position: fixed;
+  right: -250px;
+  top: 55px;
+  background-color: white;
+  border: 1px solid var(--borderLight-light);
+  width: 250px;
+  border-radius: 0 0 0 5px;
+  z-index: 99999;
 }
 
 .parent .parnet-sections .setting .icon {
-    position: absolute;
-    left: -50px;
-    top:-1.5px;
-    border: 1px solid var(--borderLight-light);
-    width: 50px;
-    height: 52px;
-    text-align: center;
-    background-color: white;
-    border-radius: 5px 0 0 5px;
+  position: absolute;
+  left: -50px;
+  top: -1.5px;
+  border: 1px solid var(--borderLight-light);
+  width: 50px;
+  height: 52px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px 0 0 5px;
 }
 
 .parent .parnet-sections .setting .fa-cog {
-    line-height: 50px;
-    font-size: 25px;
-    animation: rotate 4s linear infinite;
-    cursor:pointer
+  line-height: 50px;
+  font-size: 25px;
+  animation: rotate 4s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .parent .parnet-sections .setting h4,
 .parent .parnet-sections .setting ul.colors,
 .parent .parnet-sections .setting .input {
-    padding: 9px 15px;
-    margin: 0;
+  padding: 9px 15px;
+  margin: 0;
 }
 
 .parent .parnet-sections .setting h4,
 .parent .parnet-sections .setting ul.colors {
-    border-bottom:1px solid var(--borderLight-light)
+  border-bottom: 1px solid var(--borderLight-light);
 }
 
 .parent .parnet-sections .setting ul.colors {
-    margin: 0;
+  margin: 0;
 }
 
 .parent .parnet-sections .setting ul.colors li {
-    list-style: none;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .parent .parnet-sections .setting ul.colors li[class="redColor"] {
-    background-color: var(--redColor);
+  background-color: var(--redColor);
 }
 
 .parent .parnet-sections .setting ul.colors li[class="blueColor"] {
-    background-color: var(--blueColor);
+  background-color: var(--blueColor);
 }
 
 .parent .parnet-sections .setting ul.colors li[class="OrangeColor"] {
-    background-color: var(--OrangeColor);
+  background-color: var(--OrangeColor);
 }
 
 .parent .parnet-sections .setting ul.colors li[class="YellowColor"] {
-    background-color: var(--YellowColor);
+  background-color: var(--YellowColor);
 }
 .parent .parnet-sections .setting ul.colors li[class="greenColor"] {
-    background-color: var(--greenColor);
+  background-color: var(--greenColor);
 }
 
-.parent .parnet-sections .setting .input label{
-    margin:0 15px 0 5px;
+.parent .parnet-sections .setting .input label {
+  margin: 0 15px 0 5px;
 }
 
 /*end setting sections*/
 /*end parent sections*/
 /*start sections one*/
 .parent .parnet-sections .section .container,
-.parent .parnet-sections .section .container .row{
-    height: 100%;
+.parent .parnet-sections .section .container .row {
+  height: 100%;
 }
 
-.parent .parnet-sections .section .container .row{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.parent .parnet-sections .section .container .row {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .parent .parnet-sections .section-one {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .parent .parnet-sections .section-one .main-img {
-    width: 310px;
-    height: 310px;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow:0 0 20px #c0c0c0;
-    margin-bottom: 30px;
-    background-color: white;
-    overflow: hidden;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 20px #c0c0c0;
+  margin-bottom: 30px;
+  background-color: white;
+  overflow: hidden;
 }
 
 .parent .parnet-sections .section-one .main-img .img {
-    background-image: url(../../imgs/about.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+  background-image: url(../../imgs/about.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .parent .parnet-sections .section-one h1 {
-    font-size: 45px;
-    text-shadow: 0 0 5px #646464;
+  font-size: 45px;
+  text-shadow: 0 0 5px #646464;
 }
 
 .parent .parnet-sections .section-one p {
-    font-size: 21px;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
+  font-size: 21px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
 }
 
 .parent .parnet-sections .section-one ul.soical-icons li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 6px;
-    width: 45px;
-    height: 45px;   
-    line-height: 45px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    background-color: var(--redColor);
-    color: white
+  list-style: none;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.parent .parnet-sections .section-one ul.soical-icons li a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--redColor);
+  color: white;
 }
 /*end sections one*/

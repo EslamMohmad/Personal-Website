@@ -1,153 +1,179 @@
 /*start head row*/
 .parent .parnet-sections .section-two .head h4 {
-    font-size: 25px;
-    margin-bottom: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .parent .parnet-sections .section-two .head h4 span {
-    color: var(--redColor);
+  color: var(--redColor);
 }
 
 .parent .parnet-sections .section-two .head p.text {
-    width: 85%;
-    line-height: 1.8em;
-    margin-bottom: 50px;
+  width: 85%;
+  line-height: 1.8em;
+  margin-bottom: 50px;
 }
 
 .parent .parnet-sections .section-two .head .content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.one{
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.parent .parnet-sections .section-two .head .content .bord.one {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .parent .parnet-sections .section-two .head .content .bord.one .data {
-    width: 47%;
+  width: 47%;
 }
 
 .parent .parnet-sections .section-two .head .content .bord.one .data p {
-    padding:0 0 15px 0;
-    border-bottom: 1px solid var(--borderLight-light);
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid var(--borderLight-light);
 }
 
 .parent .parnet-sections .section-two .head .content .bord.one .data p span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .parent .parnet-sections .section-two .head .content .bord.one .buttons {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .parent .parnet-sections .section-two .head .content .bord.one .buttons button {
-    background-color: var(--redColor);
-    color: white;
-    border: none;
-    outline: none;
-    padding: 10px 30px;
-    margin-right: 20px;
-    border-radius: 25px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
+  background-color: var(--redColor);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  margin-right: 20px;
+  border-radius: 25px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two{
-    width: 37%;
+.parent .parnet-sections .section-two .head .content .bord.two {
+  width: 37%;
 }
 
 .parent .parnet-sections .section-two .head .content .bord.two .progress {
-    width: 100%;
-    overflow: visible;
-    flex-direction: column;
-    height: auto;
-    line-height: 1.5em;
-    background-color: transparent;
+  width: 100%;
+  overflow: visible;
+  flex-direction: column;
+  height: auto;
+  line-height: 1.5em;
+  background-color: transparent;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two .progress .progress-bar {
-    height: 7px;
-    background-color: var(--redColor);
-    border-radius: 5px 0 0 5px;
+.parent
+  .parnet-sections
+  .section-two
+  .head
+  .content
+  .bord.two
+  .progress
+  .progress-bar {
+  height: 7px;
+  background-color: var(--redColor);
+  border-radius: 5px 0 0 5px;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two .progress:not(:last-child) {
-    margin-bottom: 25px;
+.parent
+  .parnet-sections
+  .section-two
+  .head
+  .content
+  .bord.two
+  .progress:not(:last-child) {
+  margin-bottom: 25px;
 }
-
 
 .parent .parnet-sections .section-two .head .content .bord.two .progress p {
-    margin-bottom: 15px;
-    font-size: 20px;
-    text-transform: capitalize;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two .progress p span {
-    float: right;
+.parent
+  .parnet-sections
+  .section-two
+  .head
+  .content
+  .bord.two
+  .progress
+  p
+  span {
+  float: right;
 }
 /*start head row*/
 /*start foot row*/
 .parent .parnet-sections .section-two .row.foot {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between !important;
-} 
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between !important;
+}
 
 .parent .parnet-sections .section-two .foot .bord {
-    width: 49%;
-    margin-bottom:40px;
+  width: 49%;
+  margin-bottom: 40px;
 }
 
 .parent .parnet-sections .section-two .foot .bord h1 {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .parent .parnet-sections .section-two .foot .bord .content {
-    box-shadow: 0 0 15px 0px var(--boxShadow);
-    padding: 25px 40px;
-    position: relative;
-    border-radius: 5px;
+  box-shadow: 0 0 15px 0px var(--boxShadow);
+  padding: 25px 40px;
+  position: relative;
+  border-radius: 5px;
 }
 
 .parent .parnet-sections .section-two .foot .bord .content hr {
-    position: absolute;
-    left: 20px;
-    top:50%;
-    height: 90%;
-    width: 1px;
-    transform: rotate(0deg) translateY(-50%);
-    background-color: var(--redColor);
-    margin: 0;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  height: 90%;
+  width: 1px;
+  transform: rotate(0deg) translateY(-50%);
+  background-color: var(--redColor);
+  margin: 0;
 }
 
-.parent .parnet-sections .section-two .foot .bord .content .txt:not(:last-child) {
-    margin-bottom: 60px;
+.parent
+  .parnet-sections
+  .section-two
+  .foot
+  .bord
+  .content
+  .txt:not(:last-child) {
+  margin-bottom: 60px;
 }
 
 .parent .parnet-sections .section-two .foot .bord .content .txt {
-    position: relative;
+  position: relative;
 }
 
 .parent .parnet-sections .section-two .foot .bord .content .txt .red-disc {
-    position: absolute;
-    left: -24.2px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--redColor);
+  position: absolute;
+  left: -24.2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--redColor);
 }
 
 .parent .parnet-sections .section-two .foot .bord .content .txt span i {
-    margin:0 10px 15px 0;
-    color: gray;
+  margin: 0 10px 15px 0;
+  color: gray;
 }
 
 .parent .parnet-sections .section-two .foot .bord .content .txt p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 /*end foot row*/
