@@ -24,27 +24,34 @@ $(window).ready(function () {
     });
   });
 
-  //translate setting section
-  $(".parnet-sections .setting .icon").on("click", function () {
-    const eleWidth = $(this).parent().outerWidth();
-    if ($(this).hasClass("active")) {
-      $(this)
-        .parent()
-        .animate({
-          right: -eleWidth + "px",
-        })
-        .children(".icon")
-        .removeClass("active");
+  function getCssValue(element, property) {
+    return window
+      .getComputedStyle(element)
+      .getPropertyValue(property)
+      .replace("px", "");
+  }
+
+  const settingIcon = document.querySelector(".parnet-sections .setting");
+  //click on window to close coloring sections
+  window.addEventListener("click", function ({ target }) {
+    const colorSettingWidth = getCssValue(settingIcon, "width");
+    settingIcon.style.right = `-${colorSettingWidth}px`;
+    settingIcon.firstElementChild.classList.remove("active");
+  });
+
+  //click on icon color setting
+  settingIcon.firstElementChild.addEventListener("click", function () {
+    const colorSettingWidth = getCssValue(settingIcon, "width");
+    const coloringSection = this.parentElement;
+    if (this.classList.contains("active")) {
+      this.classList.remove("active");
+      coloringSection.style.right = `-${colorSettingWidth}px`;
     } else {
-      $(this)
-        .parent()
-        .animate({
-          right: 0,
-        })
-        .children(".icon")
-        .addClass("active");
+      this.classList.add("active");
+      coloringSection.style.right = "0px";
     }
   });
+
   //coloring web
   const targetElemet = $(".parent .nav-bar .row ul");
   $(".parnet-sections .setting .colors li").on("click", function () {
@@ -154,40 +161,42 @@ $(window).ready(function () {
       );
   });
 
-  //fetch data
   const templates = document.querySelector(
     ".parent .section-four .content .items.grid"
   );
-  fetch("DataBase/data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const sections = Object.keys(data);
-      sections.forEach((sec) => {
-        data[sec].forEach((templetesArr) => {
-          const content = `
-        <div class="bord ${sec}">
+  const filterationItems = document.querySelector(
+    ".parent .section-four .content .filter-list ul"
+  );
+
+  //just fetching data
+  const getData = async () => {
+    return fetch("DataBase/data.json").then((response) => response.json());
+  };
+
+  //set Templates data async function
+  (async function () {
+    const data = await getData();
+    const sections = Object.keys(data);
+    sections.forEach((sec) => {
+      data[sec].forEach((templetesArr) => {
+        const content = `
+        <div class="bord ${sec} show">
             <img alt="${sec}" src="${templetesArr["img-local-src"]}"/>
             <a href="${templetesArr["template-link"]}" target="_blank" class="bgcolor-style">live preview</a>
         </div>
       `;
-          templates.innerHTML += content;
-        });
-      });
-      PortofolioFunc();
-      //check if sessionStorage is empty or not
-
-      //set that function here becase we create element from here
-      $(function () {
-        if (window.sessionStorage.length >= 1) {
-          local();
-          inputRadioCheck();
-        } else {
-          inputRadioCheck();
-        }
+        templates.innerHTML += content;
       });
     });
+  })();
 
-  function PortofolioFunc() {
+  //multi events async function on templates children
+  (async function () {
+    const data = await getData();
+    /**
+    - Declare data as vaiablue for waiting fetching data first 
+    - allow us to see templates.children 
+     */
     [...templates.children].forEach((element) => {
       //multi events
       ["mouseover", "mouseleave"].forEach((event) => {
@@ -195,14 +204,11 @@ $(window).ready(function () {
           event,
           function ({ target }) {
             if (event === "mouseover") {
-              const imgsHeight = +window
-                .getComputedStyle(target)
-                .getPropertyValue("height")
-                .replace("px", "");
-              const imgParentHeight = +window
-                .getComputedStyle(target.parentElement)
-                .getPropertyValue("height")
-                .replace("px", "");
+              const imgsHeight = getCssValue(target, "height");
+              const imgParentHeight = getCssValue(
+                target.parentElement,
+                "height"
+              );
               target.style.top = `-${imgsHeight - imgParentHeight}px`;
             } else if (event === "mouseleave") {
               target.style.top = `0px`;
@@ -211,25 +217,55 @@ $(window).ready(function () {
         );
       });
     });
-  }
+  })();
 
-  //section-four filter items
-  $(".parent .section-four .content .filter-list ul li").on(
-    "click",
-    function () {
-      $(this).addClass("active").siblings().removeClass("active");
-      let item = $(".bord." + $(this).text());
-      const parent = $(".parent .section-four .content .grid").children();
-      if ($(this).text() == "all") {
-        parent.fadeIn().parent().removeClass("short"); // grid setting
-      } else {
-        parent.fadeOut(function () {
-          parent.parent().addClass("short");
-        });
-        item.delay(400).fadeIn();
-      }
+  //set filteration list items async function
+  (async function () {
+    const data = await getData();
+    Object.keys(data).forEach(
+      (li) => (filterationItems.innerHTML += `<li class="heading">${li}</li>`)
+    );
+    [...filterationItems.children].forEach((list, idx, arr) => {
+      list.addEventListener("click", function () {
+        arr.forEach((e) => e.classList.remove("active"));
+        this.classList.add("active");
+        const listText = this.textContent;
+        const {
+          parentElement: {
+            nextElementSibling: { children },
+          },
+        } = this.parentElement;
+        if (listText === "all") {
+          [...children].forEach((temp) =>
+            temp.classList.replace(temp.classList[2], "show")
+          );
+        } else {
+          const targetTemplates = [
+            ...document.querySelectorAll(
+              `.parent .section-four .content .items.grid .bord.${listText}`
+            ),
+          ];
+          [...templates.children].forEach((e) =>
+            e.classList.replace(e.classList[2], "hide")
+          );
+          targetTemplates.forEach((e) =>
+            e.classList.replace(e.classList[2], "show")
+          );
+          templates.classList.add("short");
+        }
+      });
+    });
+  })();
+
+  //check if sessionStorage is empty or not
+  (function () {
+    if (window.sessionStorage.length >= 1) {
+      local();
+      inputRadioCheck();
+    } else {
+      inputRadioCheck();
     }
-  );
+  })();
 
   // use what was stored in localStorage
   function local() {

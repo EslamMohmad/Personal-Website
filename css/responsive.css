@@ -1,3 +1,19 @@
+@media (max-width: 1450px) {
+  .parent .section-three .row .content.grid,
+  .parent .section-four .content .grid {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .parent .section-five .content {
+    flex-wrap: wrap;
+  }
+
+  .parent .section-five .content .bord {
+    width: 47%;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .parent .nav-bar {
     position: fixed;
@@ -11,15 +27,30 @@
   .parent .nav-bar .fa-bars {
     display: block;
   }
-}
 
-@media (max-width: 453px) {
-  .parent .nav-bar {
-    width: 290px;
-    left: -290px;
+  .parent .section-three .row .content.grid,
+  .parent .section-four .content .grid {
+    grid-template-columns: repeat(3, auto);
   }
 }
+
 @media (max-width: 992px) {
+  .parent .parnet-sections .section-two .row.foot {
+    flex-direction: column;
+  }
+  .parent .parnet-sections .section-two .row.foot .bord {
+    width: 100%;
+  }
+
+  .parent .section-three .row .content.grid,
+  .parent .section-four .content .grid {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .parent .section-three .row .content .bord p {
+    font-size: 14px;
+  }
+
   .parent .parnet-sections .section-two .head .content {
     flex-direction: column;
   }
@@ -40,91 +71,7 @@
   }
 }
 
-@media (max-width: 876px) {
-  .parent .parnet-sections .section-two .row.foot {
-    flex-direction: column;
-  }
-  .parent .parnet-sections .section-two .row.foot .bord {
-    width: 100%;
-  }
-}
-
-@media (max-width: 590px) {
-  .parent .parnet-sections .section-two .head .content .bord.two {
-    width: 100%;
-  }
-}
-
-@media (max-width: 424px) {
-  .parent .parnet-sections .section-two .head .content .bord.one {
-    flex-direction: column;
-  }
-  .parent .parnet-sections .section-two .head .content .bord.one .data {
-    width: 100%;
-  }
-
-  .parent .parnet-sections .section-two .head p.text {
-    width: 100%;
-  }
-}
-/*start portofolio  section*/
-@media (max-width: 1450px) {
-  .parent .section .row .content.grid,
-  .parent .section .row .grid {
-    padding-bottom: 30px;
-  }
-
-  .parent .section-five .content {
-    flex-wrap: wrap;
-  }
-
-  .parent .section-five .content .bord {
-    width: 47%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 1000px) {
-  .parent.dark .section-four .content .grid {
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(1, auto);
-  }
-}
-
-@media (max-width: 749px) {
-  .parent .section-five .content .bord {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .parent .section .row .content.grid,
-  .parent .section .row .grid {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(6, auto);
-    padding-bottom: 20px;
-  }
-
-  .parent .section .row .grid.short {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(2, auto);
-    padding-bottom: 20px;
-  }
-
-  .parent.dark .section-four .content .grid {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(2, auto);
-  }
-}
-
-@media (max-width: 400px) {
-  .parent .section-four .content .filter-list ul li {
-    margin-right: 5px;
-  }
-}
-/*end portofolio  section*/
-/*start content  section*/
-@media (max-width: 778px) {
+@media (max-width: 768px) {
   .parent .section-six .content .head {
     flex-direction: column;
   }
@@ -148,5 +95,43 @@
   .parent .section-six .content .foot textarea {
     margin-top: 0;
   }
+
+  .parent .section-five .content .bord {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
-/*end content  section*/
+
+@media (max-width: 600px) {
+  .parent .parnet-sections .section-two .head .content .bord.two {
+    width: 100%;
+  }
+
+  .parent .section-three .row .content.grid,
+  .parent .section-four .content .grid {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .parent .section-three .row .content .bord,
+  .parent .section-four .content .grid .bord {
+    max-width: unset;
+  }
+
+  .parent .parnet-sections .section-two .head .content .bord.one {
+    flex-direction: column;
+  }
+  .parent .parnet-sections .section-two .head .content .bord.one .data {
+    width: 100%;
+  }
+
+  .parent .parnet-sections .section-two .head p.text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 453px) {
+  .parent .nav-bar {
+    width: 290px;
+    left: -290px;
+  }
+}

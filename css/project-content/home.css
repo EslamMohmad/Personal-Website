@@ -155,6 +155,7 @@
   width: 250px;
   border-radius: 0 0 0 5px;
   z-index: 99999;
+  transition: 0.8s ease right;
 }
 
 .parent .parnet-sections .setting .icon {

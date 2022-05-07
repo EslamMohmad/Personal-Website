@@ -1,77 +1,77 @@
 .parent .section-three {
-    overflow:auto;
+  overflow: auto;
 }
 
 .parent .section-three .row .content .bord {
-    padding: 45px 20px;
-    border: 1px solid var(--borderDark-light);
-    transition: 0.2s ease-in-out box-shadow;
-    border-radius: 5px;
-    height: 320px;
+  padding: 45px 20px;
+  border: 1px solid var(--borderDark-light);
+  transition: 0.2s ease-in-out box-shadow;
+  border-radius: 5px;
+  height: 320px;
+  max-width: 500px;
 }
 
 .parent .section-three .row .content .bord:hover {
-    box-shadow: 0 0 10px 3px #d8d8d8;
+  box-shadow: 0 0 10px 3px #d8d8d8;
 }
 
 .parent .section-three .row .content.grid {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(2,auto);
-    justify-content: space-between;
-    grid-row-gap: 30px;
-    grid-column-gap: 20px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: flex-start;
+  gap: 30px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .parent .section-three .row .content .bord i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50%;
-    color: var(--redColor);
+  font-size: 40px;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  color: var(--redColor);
 }
 
-.parent .section-three .row .content.redColor .bord i{
-    color:var(--redColor)
+.parent .section-three .row .content.redColor .bord i {
+  color: var(--redColor);
 }
-.parent .section-three .row .content.blueColor .bord i{
-
-    color:var(--blueColor)
+.parent .section-three .row .content.blueColor .bord i {
+  color: var(--blueColor);
 }
-.parent .section-three .row .content.OrangeColor .bord i{
-    color:var(--OrangeColor)
+.parent .section-three .row .content.OrangeColor .bord i {
+  color: var(--OrangeColor);
 }
-.parent .section-three .row .content.YellowColor .bord i{
-    color:var(--YellowColor)
+.parent .section-three .row .content.YellowColor .bord i {
+  color: var(--YellowColor);
 }
-.parent .section-three .row .content.greenColor .bord i{
-    color:var(--greenColor)
-}
-
-.parent .section-three .row .content .bord:hover i{
-    color:white;
-    background-color: var(--redColor);
+.parent .section-three .row .content.greenColor .bord i {
+  color: var(--greenColor);
 }
 
-.parent .section-three .row .content.redColor .bord:hover i{
-    background-color: var(--redColor);
+.parent .section-three .row .content .bord:hover i {
+  color: white;
+  background-color: var(--redColor);
 }
-.parent .section-three .row .content.blueColor .bord:hover i{
-    background-color: var(--blueColor);
+
+.parent .section-three .row .content.redColor .bord:hover i {
+  background-color: var(--redColor);
 }
-.parent .section-three .row .content.OrangeColor .bord:hover i{
-    background-color: var(--OrangeColor);
+.parent .section-three .row .content.blueColor .bord:hover i {
+  background-color: var(--blueColor);
 }
-.parent .section-three .row .content.YellowColor .bord:hover i{
-    background-color: var(--YellowColor);
+.parent .section-three .row .content.OrangeColor .bord:hover i {
+  background-color: var(--OrangeColor);
 }
-.parent .section-three .row .content.greenColor .bord:hover i{
-    background-color: var(--greenColor);
+.parent .section-three .row .content.YellowColor .bord:hover i {
+  background-color: var(--YellowColor);
+}
+.parent .section-three .row .content.greenColor .bord:hover i {
+  background-color: var(--greenColor);
 }
 
 .parent .section-three .row .content .bord h4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
