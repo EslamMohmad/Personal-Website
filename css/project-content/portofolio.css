@@ -69,47 +69,79 @@
 
 .parent .section-four .content .filter-list ul li.active,
 .parent .section-four .content .filter-list ul li:hover {
+  border-bottom: 3px solid transparent;
+}
+
+.parent[data-current-color="redColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li.active,
+.parent[data-current-color="redColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li:hover {
   border-bottom: 3px solid var(--redColor);
 }
 
-.parent .section-four .content .filter-list ul.redColor li.active {
-  border-bottom-color: var(--redColor);
+.parent[data-current-color="blueColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li.active,
+.parent[data-current-color="blueColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li:hover {
+  border-bottom: 3px solid var(--blueColor);
 }
-
-.parent .section-four .content .filter-list ul.blueColor li.active {
-  border-bottom-color: var(--blueColor);
+.parent[data-current-color="yellowColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li.active,
+.parent[data-current-color="yellowColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li:hover {
+  border-bottom: 3px solid var(--yellowColor);
 }
-
-.parent .section-four .content .filter-list ul.OrangeColor li.active {
-  border-bottom-color: var(--OrangeColor);
+.parent[data-current-color="greenColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li.active,
+.parent[data-current-color="greenColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li:hover {
+  border-bottom: 3px solid var(--greenColor);
 }
-
-.parent .section-four .content .filter-list ul.YellowColor li.active {
-  border-bottom-color: var(--YellowColor);
-}
-
-.parent .section-four .content .filter-list ul.greenColor li.active {
-  border-bottom-color: var(--greenColor);
-}
-
-.parent .section-four .content .filter-list ul.redColor li.active {
-  border-bottom-color: var(--redColor);
-}
-
-.parent .section-four .content .filter-list ul.blueColor li:hover {
-  border-bottom-color: var(--blueColor);
-}
-
-.parent .section-four .content .filter-list ul.OrangeColor li:hover {
-  border-bottom-color: var(--OrangeColor);
-}
-
-.parent .section-four .content .filter-list ul.YellowColor li:hover {
-  border-bottom-color: var(--YellowColor);
-}
-
-.parent .section-four .content .filter-list ul.greenColor li:hover {
-  border-bottom-color: var(--greenColor);
+.parent[data-current-color="orangeColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li.active,
+.parent[data-current-color="orangeColor"]
+  .section-four
+  .content
+  .filter-list
+  ul
+  li:hover {
+  border-bottom: 3px solid var(--orangeColor);
 }
 
 .parent .section-four .content .grid .bord {
@@ -173,7 +205,6 @@
   z-index: 1;
   border-radius: 25px;
   text-decoration: none;
-  background-color: var(--redColor);
   color: white;
   font-weight: 600;
 }

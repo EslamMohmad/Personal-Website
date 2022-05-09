@@ -9,8 +9,8 @@
   /*start style color*/
   --redColor: #ec1839;
   --blueColor: #2196f3;
-  --OrangeColor: #fa5b0f;
-  --YellowColor: #ffb400;
+  --orangeColor: #fa5b0f;
+  --yellowColor: #ffb400;
   --greenColor: #72b626;
   /*end style color*/
 
@@ -35,39 +35,36 @@
 }
 
 .heading {
-  color: var(--heading-light);
   font-weight: bolder;
   line-height: normal;
 }
 
 .text {
-  color: var(--text-light);
   font-weight: lighter;
 }
 
 /*header h1 on all sections*/
-.parent .parnet-sections .section .row h1.top {
+.parent .parent-sections .section .row h1.top {
   font-size: 50px;
   font-weight: bolder;
   margin-bottom: 50px;
 }
 
-.parent .parnet-sections .section .row h1.top hr {
+.parent .parent-sections .section .row h1.top hr {
   margin: 0;
   margin-bottom: 5px;
   height: 4px;
   width: 65px;
-  background-color: var(--redColor);
   border: none;
 }
 
-.parent .parnet-sections .section .row h1 hr.short {
+.parent .parent-sections .section .row h1 hr.short {
   width: 45px;
 }
 /*header h1 on all sections*/
 /*all sections configurations*/
 
-.parent .parnet-sections .section.flex-start .container .row {
+.parent .parent-sections .section.flex-start .container .row {
   padding-top: 100px;
   justify-content: flex-start;
   align-items: flex-start;
@@ -76,7 +73,7 @@
   height: auto;
 }
 
-.parent .parnet-sections .section.flex-start .container {
+.parent .parent-sections .section.flex-start .container {
   max-width: 100%;
 }
 /*all sections configurations*/
@@ -97,27 +94,32 @@
 
 /* Handle */
 /*custom scrollbar*/
-.parnet-sections[data-scrollbar-color="redColor"]
+.parent[data-current-color="redColor"]
+  .parent-sections
   .section::-webkit-scrollbar-thumb {
   background: var(--redColor);
 }
 
-.parnet-sections[data-scrollbar-color="blueColor"]
+.parent[data-current-color="blueColor"]
+  .parent-sections
   .section::-webkit-scrollbar-thumb {
   background: var(--blueColor);
 }
 
-.parnet-sections[data-scrollbar-color="OrangeColor"]
+.parent[data-current-color="orangeColor"]
+  .parent-sections
   .section::-webkit-scrollbar-thumb {
-  background: var(--OrangeColor);
+  background: var(--orangeColor);
 }
 
-.parnet-sections[data-scrollbar-color="YellowColor"]
+.parent[data-current-color="yellowColor"]
+  .parent-sections
   .section::-webkit-scrollbar-thumb {
-  background: var(--YellowColor);
+  background: var(--yellowColor);
 }
 
-.parnet-sections[data-scrollbar-color="greenColor"]
+.parent[data-current-color="greenColor"]
+  .parent-sections
   .section::-webkit-scrollbar-thumb {
   background: var(--greenColor);
 }

@@ -16,7 +16,6 @@
 .parent .nav-bar .fa-bars,
 .parent .nav-bar .fa-times {
   position: absolute;
-  color: var(--redColor);
   top: 10px;
   right: -50px;
   width: 40px;
@@ -48,7 +47,6 @@
   width: 30px;
   height: 30px;
   z-index: -1;
-  background-color: var(--redColor);
 }
 
 .parent .nav-bar .txt h1 .part.after {
@@ -87,51 +85,31 @@
   padding-left: 25px;
 }
 
-.parent .nav-bar .row ul.redColor li:hover {
+.parent[data-current-color="redColor"] .nav-bar .row ul li:hover {
   color: var(--redColor);
 }
-.parent .nav-bar .row ul.blueColor li:hover {
+.parent[data-current-color="blueColor"] .nav-bar .row ul li:hover {
   color: var(--blueColor);
 }
-.parent .nav-bar .row ul.OrangeColor li:hover {
-  color: var(--OrangeColor);
+.parent[data-current-color="orangeColor"] .nav-bar .row ul li:hover {
+  color: var(--orangeColor);
 }
-.parent .nav-bar .row ul.YellowColor li:hover {
-  color: var(--YellowColor);
+.parent[data-current-color="yellowColor"] .nav-bar .row ul li:hover {
+  color: var(--yellowColor);
 }
-.parent .nav-bar .row ul.greenColor li:hover {
-  color: var(--greenColor);
-}
-
-.parent .nav-bar .row li.redColor {
-  color: var(--redColor);
-}
-
-.parent .nav-bar .row li.blueColor {
-  color: var(--blueColor);
-}
-
-.parent .nav-bar .row li.OrangeColor {
-  color: var(--OrangeColor);
-}
-
-.parent .nav-bar .row li.YellowColor {
-  color: var(--YellowColor);
-}
-
-.parent .nav-bar .row li.greenColor {
+.parent[data-current-color="greenColor"] .nav-bar .row ul li:hover {
   color: var(--greenColor);
 }
 
 /*start parent sections*/
-.parnet-sections {
+.parent-sections {
   height: 100%;
   overflow: hidden;
   position: relative;
   background-color: var(--BCLight-light);
 }
 
-.parent .parnet-sections .section {
+.parent .parent-sections .section {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -141,12 +119,12 @@
   background-color: var(--BCDark-light);
 }
 
-.parent .parnet-sections .section.active {
+.parent .parent-sections .section.active {
   left: 0%;
 }
 
 /*start setting sections*/
-.parent .parnet-sections .setting {
+.parent .parent-sections .setting {
   position: fixed;
   right: -250px;
   top: 55px;
@@ -158,7 +136,7 @@
   transition: 0.8s ease right;
 }
 
-.parent .parnet-sections .setting .icon {
+.parent .parent-sections .setting .icon {
   position: absolute;
   left: -50px;
   top: -1.5px;
@@ -170,7 +148,7 @@
   border-radius: 5px 0 0 5px;
 }
 
-.parent .parnet-sections .setting .fa-cog {
+.parent .parent-sections .setting .fa-cog {
   line-height: 50px;
   font-size: 25px;
   animation: rotate 4s linear infinite;
@@ -183,23 +161,23 @@
   }
 }
 
-.parent .parnet-sections .setting h4,
-.parent .parnet-sections .setting ul.colors,
-.parent .parnet-sections .setting .input {
+.parent .parent-sections .setting h4,
+.parent .parent-sections .setting ul.colors,
+.parent .parent-sections .setting .input {
   padding: 9px 15px;
   margin: 0;
 }
 
-.parent .parnet-sections .setting h4,
-.parent .parnet-sections .setting ul.colors {
+.parent .parent-sections .setting h4,
+.parent .parent-sections .setting ul.colors {
   border-bottom: 1px solid var(--borderLight-light);
 }
 
-.parent .parnet-sections .setting ul.colors {
+.parent .parent-sections .setting ul.colors {
   margin: 0;
 }
 
-.parent .parnet-sections .setting ul.colors li {
+.parent .parent-sections .setting ul.colors li {
   list-style: none;
   display: inline-block;
   width: 40px;
@@ -208,48 +186,48 @@
   cursor: pointer;
 }
 
-.parent .parnet-sections .setting ul.colors li[class="redColor"] {
+.parent .parent-sections .setting ul.colors li[class="redColor"] {
   background-color: var(--redColor);
 }
 
-.parent .parnet-sections .setting ul.colors li[class="blueColor"] {
+.parent .parent-sections .setting ul.colors li[class="blueColor"] {
   background-color: var(--blueColor);
 }
 
-.parent .parnet-sections .setting ul.colors li[class="OrangeColor"] {
-  background-color: var(--OrangeColor);
+.parent .parent-sections .setting ul.colors li[class="orangeColor"] {
+  background-color: var(--orangeColor);
 }
 
-.parent .parnet-sections .setting ul.colors li[class="YellowColor"] {
-  background-color: var(--YellowColor);
+.parent .parent-sections .setting ul.colors li[class="yellowColor"] {
+  background-color: var(--yellowColor);
 }
-.parent .parnet-sections .setting ul.colors li[class="greenColor"] {
+.parent .parent-sections .setting ul.colors li[class="greenColor"] {
   background-color: var(--greenColor);
 }
 
-.parent .parnet-sections .setting .input label {
+.parent .parent-sections .setting .input label {
   margin: 0 15px 0 5px;
 }
 
 /*end setting sections*/
 /*end parent sections*/
 /*start sections one*/
-.parent .parnet-sections .section .container,
-.parent .parnet-sections .section .container .row {
+.parent .parent-sections .section .container,
+.parent .parent-sections .section .container .row {
   height: 100%;
 }
 
-.parent .parnet-sections .section .container .row {
+.parent .parent-sections .section .container .row {
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.parent .parnet-sections .section-one {
+.parent .parent-sections .section-one {
   overflow: hidden;
 }
 
-.parent .parnet-sections .section-one .main-img {
+.parent .parent-sections .section-one .main-img {
   width: 310px;
   height: 310px;
   border-radius: 50%;
@@ -260,7 +238,7 @@
   overflow: hidden;
 }
 
-.parent .parnet-sections .section-one .main-img .img {
+.parent .parent-sections .section-one .main-img .img {
   background-image: url(../../imgs/about.jpg);
   background-size: cover;
   width: 100%;
@@ -268,24 +246,33 @@
   border-radius: 50%;
 }
 
-.parent .parnet-sections .section-one h1 {
+.parent .parent-sections .section-one h1 {
   font-size: 45px;
   text-shadow: 0 0 5px #646464;
 }
 
-.parent .parnet-sections .section-one p {
+.parent .parent-sections .section-one p {
   font-size: 21px;
   letter-spacing: 1px;
   margin-bottom: 25px;
+  position: relative;
 }
 
-.parent .parnet-sections .section-one ul.soical-icons li {
+.parent .parent-sections .section-one p .stick {
+  width: 3px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  right: -10px;
+}
+
+.parent .parent-sections .section-one ul.soical-icons li {
   list-style: none;
   display: inline-block;
   margin: 0 6px;
 }
 
-.parent .parnet-sections .section-one ul.soical-icons li a {
+.parent .parent-sections .section-one ul.soical-icons li a {
   display: block;
   width: 45px;
   height: 45px;
@@ -293,7 +280,6 @@
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  background-color: var(--redColor);
   color: white;
 }
 /*end sections one*/

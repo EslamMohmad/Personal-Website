@@ -32,44 +32,55 @@
   height: 70px;
   line-height: 70px;
   border-radius: 50%;
-  color: var(--redColor);
 }
 
-.parent .section-three .row .content.redColor .bord i {
-  color: var(--redColor);
+.parent[data-current-color="redColor"]
+  .section-three
+  .row
+  .content
+  .bord:hover
+  i {
+  background-color: var(--redColor);
 }
-.parent .section-three .row .content.blueColor .bord i {
-  color: var(--blueColor);
+
+.parent[data-current-color="greenColor"]
+  .section-three
+  .row
+  .content
+  .bord:hover
+  i {
+  background-color: var(--greenColor);
 }
-.parent .section-three .row .content.OrangeColor .bord i {
-  color: var(--OrangeColor);
+
+.parent[data-current-color="blueColor"]
+  .section-three
+  .row
+  .content
+  .bord:hover
+  i {
+  background-color: var(--blueColor);
 }
-.parent .section-three .row .content.YellowColor .bord i {
-  color: var(--YellowColor);
+
+.parent[data-current-color="orangeColor"]
+  .section-three
+  .row
+  .content
+  .bord:hover
+  i {
+  background-color: var(--orangeColor);
 }
-.parent .section-three .row .content.greenColor .bord i {
-  color: var(--greenColor);
+
+.parent[data-current-color="yellowColor"]
+  .section-three
+  .row
+  .content
+  .bord:hover
+  i {
+  background-color: var(--yellowColor);
 }
 
 .parent .section-three .row .content .bord:hover i {
-  color: white;
-  background-color: var(--redColor);
-}
-
-.parent .section-three .row .content.redColor .bord:hover i {
-  background-color: var(--redColor);
-}
-.parent .section-three .row .content.blueColor .bord:hover i {
-  background-color: var(--blueColor);
-}
-.parent .section-three .row .content.OrangeColor .bord:hover i {
-  background-color: var(--OrangeColor);
-}
-.parent .section-three .row .content.YellowColor .bord:hover i {
-  background-color: var(--YellowColor);
-}
-.parent .section-three .row .content.greenColor .bord:hover i {
-  background-color: var(--greenColor);
+  color: white !important;
 }
 
 .parent .section-three .row .content .bord h4 {

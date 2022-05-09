@@ -20,7 +20,7 @@
     left: -400px;
     transition: 0.5s ease-in-out left;
   }
-  .parent .nav-bar.translated {
+  .parent .nav-bar.show {
     left: 0px;
   }
 
@@ -35,10 +35,10 @@
 }
 
 @media (max-width: 992px) {
-  .parent .parnet-sections .section-two .row.foot {
+  .parent .parent-sections .section-two .row.foot {
     flex-direction: column;
   }
-  .parent .parnet-sections .section-two .row.foot .bord {
+  .parent .parent-sections .section-two .row.foot .bord {
     width: 100%;
   }
 
@@ -51,22 +51,22 @@
     font-size: 14px;
   }
 
-  .parent .parnet-sections .section-two .head .content {
+  .parent .parent-sections .section-two .head .content {
     flex-direction: column;
   }
 
-  .parent .parnet-sections .section-two .head .content .bord.one {
+  .parent .parent-sections .section-two .head .content .bord.one {
     width: 100%;
   }
-  .parent .parnet-sections .section-two .head .content .bord.two {
+  .parent .parent-sections .section-two .head .content .bord.two {
     width: 70%;
   }
 
-  .parent .parnet-sections .section-two .head .content .bord.one .data {
+  .parent .parent-sections .section-two .head .content .bord.one .data {
     width: 45%;
   }
 
-  .parent .parnet-sections .section-two .head .content .bord.one .buttons {
+  .parent .parent-sections .section-two .head .content .bord.one .buttons {
     margin-bottom: 40px;
   }
 }
@@ -103,7 +103,7 @@
 }
 
 @media (max-width: 600px) {
-  .parent .parnet-sections .section-two .head .content .bord.two {
+  .parent .parent-sections .section-two .head .content .bord.two {
     width: 100%;
   }
 
@@ -117,14 +117,14 @@
     max-width: unset;
   }
 
-  .parent .parnet-sections .section-two .head .content .bord.one {
+  .parent .parent-sections .section-two .head .content .bord.one {
     flex-direction: column;
   }
-  .parent .parnet-sections .section-two .head .content .bord.one .data {
+  .parent .parent-sections .section-two .head .content .bord.one .data {
     width: 100%;
   }
 
-  .parent .parnet-sections .section-two .head p.text {
+  .parent .parent-sections .section-two .head p.text {
     width: 100%;
   }
 }

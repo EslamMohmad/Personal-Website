@@ -13,26 +13,26 @@
 </head>
 <body>
     <!--start parnet-->
-    <div class="parent light">
+    <div class="parent light" data-current-color="redColor" id="parent">
         <!--start navBar section-->
         <div class="nav-bar">
             <div class="container">
-                <i class="color-style fas fa-bars"></i>
+                <i class="redColor-c fas fa-bars color"></i>
                 <div class="txt">
                     <h1 class="heading">
-                        <span class="part after bgcolor-style"></span>
+                        <span class="part after redColor-bgc background-color"></span>
                         eslam
-                        <span class="part before bgcolor-style"></span>
+                        <span class="part before redColor-bgc background-color"></span>
                     </h1>
                 </div>
                 <div class="row">
-                    <ul class="redColor">
-                        <li class="heading redColor active"><i class="fas fa-home"></i>home</li>
-                        <li class="heading"><i class="fas fa-user"></i>about</li>
-                        <li class="heading"><i class="fas fa-list"></i>services</li>
-                        <li class="heading"><i class="fas fa-briefcase"></i>portofolio</li>
-                        <li class="heading"><i class="fas fa-envelope"></i>blog</li>
-                        <li class="heading"><i class="fas fa-comments"></i>contact</li>
+                    <ul>
+                        <li class="heading redColor-c active color"><i class="fas fa-home"></i>home</li>
+                        <li class="heading color"><i class="fas fa-user"></i>about</li>
+                        <li class="heading color"><i class="fas fa-list"></i>services</li>
+                        <li class="heading color"><i class="fas fa-briefcase"></i>portofolio</li>
+                        <li class="heading color"><i class="fas fa-envelope"></i>blog</li>
+                        <li class="heading color"><i class="fas fa-comments"></i>contact</li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +40,7 @@
         <!--end navBar section-->
 
         <!--start parnet-sections-->
-        <div class="parnet-sections" data-scrollbar-color="redColor">
+        <div class="parent-sections">
             <!--start setting section-->
             <div class="setting">
                 <div class="icon">
@@ -50,8 +50,8 @@
                 <ul class="colors">
                     <li class="redColor"></li>
                     <li class="blueColor"></li>
-                    <li class="OrangeColor"></li>
-                    <li class="YellowColor"></li>
+                    <li class="orangeColor"></li>
+                    <li class="yellowColor"></li>
                     <li class="greenColor"></li>
                 </ul>
                 <h4 class="heading">body style</h2>
@@ -69,13 +69,13 @@
                             <div class="img"></div>
                         </div>
                         <h1 class="heading">eslam moo</h1>
-                        <p class="text">i'm web developer</p>
+                        <p class="text" >i'm <span id="type-effect"></span><i class="stick redColor-bgc background-color"></i></p>
                         <ul class="soical-icons">
-                            <li><a class="bgcolor-style" target="_blank" href="https://www.facebook.com/eslammohmad998"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="bgcolor-style" target="_blank" href="https://github.com/EslamMohmad"><i class="fab fa-github"></i></a></li>
-                            <li><a class="bgcolor-style" target="_blank" href="https://www.instagram.com/eslammoodev"><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="bgcolor-style" target="_blank" href="https://www.linkedin.com/in/eslam-mohmad-eisa-01b479203/"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a class="bgcolor-style" target="_blank" href="https://codepen.io/eslammohmad"><i class="fab fa-codepen"></i></a></li>
+                            <li><a class="redColor-bgc background-color" target="_blank" href="https://www.facebook.com/eslammohmad998"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="redColor-bgc background-color" target="_blank" href="https://github.com/EslamMohmad"><i class="fab fa-github"></i></a></li>
+                            <li><a class="redColor-bgc background-color" target="_blank" href="https://www.instagram.com/eslammoodev"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="redColor-bgc background-color" target="_blank" href="https://www.linkedin.com/in/eslam-mohmad-eisa-01b479203/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="redColor-bgc background-color" target="_blank" href="https://codepen.io/eslammohmad"><i class="fab fa-codepen"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,13 +84,13 @@
             <!--start section two -->
             <div class="section-two flex-start section about">
                 <div class="container">
-                    <div class="row head">
+                    <div class="row head">  
                         <h1 class="heading top">
                             about me
-                            <hr class="bgcolor-style long">
-                            <hr class="bgcolor-style short">
+                            <hr class="background-color redColor-bgc long">
+                            <hr class="background-color redColor-bgc short">
                         </h1>
-                        <h4 class="heading">i'm eslam mohmad and <span class="color-style">web developer</span></h4>
+                        <h4 class="heading">i'm eslam mohmad and <span class="color redColor-c">web developer</span></h4>
                         <p class="text">I'm eslam mohmad and Web Developer
                             I am a Web Developer, and I'm very passionate and dedicated 
                             to my work. With 2 years experience as a front-End Web developer, I have acquired 
@@ -112,8 +112,8 @@
                                     <p class="heading">Freelance :<span class="text">available</span></p>
                                 </div>
                                 <div class="buttons">
-                                    <button class="bgcolor-style">download CV</button>
-                                    <button class="bgcolor-style">hire me</button>
+                                    <button class="background-color redColor-bgc">download CV</button>
+                                    <button class="background-color redColor-bgc">hire me</button>
                                 </div>
                             </div>
                             <div class="bord two">
@@ -121,25 +121,25 @@
                                     <div class="perc">
                                         <p id="progressbar-one" class="heading">javascript ES6 & React.js<span class="text">80%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-one" role="progressbar" style="width:80%"></div>
+                                    <div class="background-color redColor-bgc progress-bar" aria-labelledby="progressbar-one" role="progressbar" style="width:80%"></div>
                                 </div>
                                 <div class="progress">
                                     <div class="perc">
                                         <p id="progressbar-two" class="heading">HTML5 & CSS3<span class="text">90%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-two" role="progressbar" style="width: 90%"></div>
+                                    <div class="background-color redColor-bgc progress-bar" aria-labelledby="progressbar-two" role="progressbar" style="width: 90%"></div>
                                 </div>
                                 <div class="progress">
                                     <div class="perc">
                                         <p id="progressbar-three" class="heading">bootstrap 5<span class="text">70%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-three" role="progressbar" style="width: 70%"></div>
+                                    <div class="background-color redColor-bgc progress-bar" aria-labelledby="progressbar-three" role="progressbar" style="width: 70%"></div>
                                 </div>
                                 <div class="progress">
                                     <div class="perc">
                                         <p id="progressbar-four" class="heading">AJAX-JSON & web API<span class="text">65%</span></p>
                                     </div>
-                                    <div class="bgcolor-style progress-bar" aria-labelledby="progressbar-four" role="progressbar" style="width: 65%"></div>
+                                    <div class="background-color redColor-bgc progress-bar" aria-labelledby="progressbar-four" role="progressbar" style="width: 65%"></div>
                                 </div>
                             </div>
                         </div>
@@ -148,9 +148,9 @@
                         <div class="bord">
                             <h1 class="heading">eduction</h1>
                             <div class="content">
-                                <hr class="bgcolor-style">
+                                <hr class="background-color redColor-bgc">
                                 <div class="txt">
-                                    <div class="bgcolor-style red-disc"></div>
+                                    <div class="background-color redColor-bgc red-disc"></div>
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2017-2018</span>
                                     <h4 class="heading">Computer Science</h4>
                                     <p class="text">
@@ -159,7 +159,7 @@
                                     </p>
                                 </div>
                                 <div class="txt">
-                                    <div class="bgcolor-style red-disc"></div>
+                                    <div class="background-color redColor-bgc red-disc"></div>
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2018-2022</span>
                                     <h4 class="heading">Studing At CIS</h4>
                                     <p class="text">
@@ -168,7 +168,7 @@
                                     </p>
                                 </div>
                                 <div class="txt">
-                                    <div class="bgcolor-style red-disc"></div>
+                                    <div class="background-color redColor-bgc red-disc"></div>
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2022-2022</span>
                                     <h4 class="heading">Bachelor Degree</h4>
                                     <p class="text">
@@ -181,9 +181,9 @@
                         <div class="bord">
                             <h1 class="heading">experience</h1>
                             <div class="content">
-                                <hr class="bgcolor-style">
+                                <hr class="background-color redColor-bgc">
                                 <div class="txt">
-                                    <div class="bgcolor-style red-disc"></div>
+                                    <div class="background-color redColor-bgc red-disc"></div>
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2017-2019</span>
                                     <h4 class="heading">networking</h4>
                                     <p class="text">
@@ -192,7 +192,7 @@
                                     </p>
                                 </div>
                                 <div class="txt">
-                                    <div class="bgcolor-style red-disc"></div>
+                                    <div class="background-color redColor-bgc red-disc"></div>
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2019-2020</span>
                                     <h4 class="heading">information technology</h4>
                                     <p class="text">
@@ -201,7 +201,7 @@
                                     </p>
                                 </div>
                                 <div class="txt">
-                                    <div class="bgcolor-style red-disc"></div>
+                                    <div class="background-color redColor-bgc red-disc"></div>
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2020-2021</span>
                                     <h4 class="heading">front-end developer</h4>
                                     <p class="text">
@@ -221,37 +221,37 @@
                     <div class="row">
                         <h1 class="heading top">
                             services
-                            <hr class="bgcolor-style long">
-                            <hr class="bgcolor-style short">
+                            <hr class="background-color redColor-bgc long">
+                            <hr class="background-color redColor-bgc short">
                         </h1>
                         <div class="content grid">
                             <div class="bord">
-                                <i class="icon far fa-image"></i>
+                                <i class="color redColor-c icon far fa-image"></i>
                                 <h4 class="heading">Logo Design</h4>
                                 <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                             </div>
                             <div class="bord">
-                                <i class="icon fas fa-paint-brush"></i>
+                                <i class="color redColor-c icon fas fa-paint-brush"></i>
                                 <h4 class="heading">web design</h4>
                                 <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                             </div>
                             <div class="bord">
-                                <i class="icon far fa-eye"></i>
+                                <i class="color redColor-c icon far fa-eye"></i>
                                 <h4 class="heading">Photography</h4>
                                 <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                             </div>
                             <div class="bord">
-                                <i class="icon fas fa-code"></i>
+                                <i class="color redColor-c icon fas fa-code"></i>
                                 <h4 class="heading">Web Development</h4>
                                 <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                             </div>
                             <div class="bord">
-                                <i class="icon fas fa-project-diagram"></i>
+                                <i class="color redColor-c icon fas fa-project-diagram"></i>
                                 <h4 class="heading">networking</h4>
                                 <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                             </div>
                             <div class="bord">
-                                <i class="icon fab fa-connectdevelop"></i>
+                                <i class="color redColor-c icon fab fa-connectdevelop"></i>
                                 <h4 class="heading">modern technology</h4>
                                 <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                             </div>
@@ -266,8 +266,8 @@
                     <div class="row">
                         <h1 class="heading top">
                             portofolio
-                            <hr class="bgcolor-style long">
-                            <hr class="bgcolor-style short">
+                            <hr class="background-color redColor-bgc long">
+                            <hr class="background-color redColor-bgc short">
                         </h1>
                         <div class="content">
                             <div class="filter-list">
@@ -278,6 +278,7 @@
                             </div>
                             <div class="items grid">
                                 <!--remaining items are created from js-->
+                                
                             </div>
                         </div>
                     </div>
@@ -290,14 +291,14 @@
                     <div class="row">
                         <h1 class="heading top">
                             latest blog
-                            <hr class="bgcolor-style long">
-                            <hr class="bgcolor-style short">
+                            <hr class="background-color redColor-bgc long">
+                            <hr class="background-color redColor-bgc short">
                         </h1>
                         <div class="content">
                             <div class="bord">
                                 <div class="img">
                                     <img alt="responsive web design" src="imgs/blog/1.jpg">
-                                    <span class="bgcolor-style float">4 may 2021</span>
+                                    <span class="background-color redColor-bgc float">4 may 2021</span>
                                 </div>
                                 <div class="txt">
                                     <h4 class="heading">responsive web design</h4>
@@ -305,13 +306,13 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo 
                                         Lorem ipsum dolor sit amet, consectetur adip
                                     </p>
-                                    <p class="tag">tags : <span class="color-style">html & css</span></p>
+                                    <p class="tag">tags : <span class="color redColor-c">html & css</span></p>
                                 </div>
                             </div>
                             <div class="bord">
                                 <div class="img">
                                     <img alt="Creative Slideshow" src="imgs/blog/2.jpg">
-                                    <span class="bgcolor-style float">4 may 2021</span>
+                                    <span class="background-color redColor-bgc float">4 may 2021</span>
                                 </div>
                                 <div class="txt">
                                     <h4 class="heading">Creative Slideshow</h4>
@@ -319,13 +320,13 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo 
                                         Lorem ipsum dolor sit amet, consectetur adip
                                     </p>
-                                    <p class="tag">tags : <span class="color-style">Html & Javascrip</span></p>
+                                    <p class="tag">tags : <span class="color redColor-c">Html & Javascrip</span></p>
                                 </div>
                             </div>
                             <div class="bord">
                                 <div class="img">
                                     <img alt="Image Gallery Lightbox" src="imgs/blog/3.jpg">
-                                    <span class="bgcolor-style float">4 may 2021</span>
+                                    <span class="background-color redColor-bgc float">4 may 2021</span>
                                 </div>
                                 <div class="txt">
                                     <h4 class="heading">Image Gallery Lightbox</h4>
@@ -333,7 +334,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo 
                                         Lorem ipsum dolor sit amet, consectetur adip
                                     </p>
-                                    <p class="tag">tags : <span class="color-style">Javascript</span></p>
+                                    <p class="tag">tags : <span class="color redColor-c">Javascript</span></p>
                                 </div>
                             </div>
                         </div>
@@ -347,32 +348,32 @@
                     <div class="row">
                         <h1 class="heading top">
                             contact me
-                            <hr class="bgcolor-style long">
-                            <hr class="bgcolor-style short">
+                            <hr class="background-color redColor-bgc long">
+                            <hr class="background-color redColor-bgc short">
                         </h1>
                         <div class="content">
                             <div class="head">
                                 <div class="bord">
-                                    <i class="color-style fas fa-phone"></i>
+                                    <i class="color redColor-c fas fa-phone"></i>
                                     <h4 class="heading">call us on</h4>
-                                    <span class="text">+20 123456789</span>
+                                    <span class="text">+20 1002623871</span>
                                 </div>
                                 <div class="bord">
-                                    <i class="color-style fa fa-map-marker-alt"></i>
+                                    <i class="color redColor-c fa fa-map-marker-alt"></i>
                                     <h4 class="heading">office</h4>
-                                    <span class="text">+20 123456789</span>
+                                    <span class="text">+20 4974010</span>
                                 </div>
                                 <div class="bord">
-                                    <i class="color-style fa fa-envelope"></i>
+                                    <i class="color redColor-c fa fa-envelope"></i>
                                     <h4 class="heading">email</h4>
-                                    <span class="text">info@gmail.com</span>
+                                    <span class="text">eslammohmad998@gmail.com</span>
                                 </div>
                             </div>
                             <div class="foot">
                                 <input type="text" class="half" placeholder="your name">
                                 <input type="text" class="half" placeholder="subject">
                                 <textarea placeholder="your message"></textarea>
-                                <button class="bgcolor-style">send message</button>
+                                <button class="background-color redColor-bgc">send message</button>
                             </div>
                         </div>
                     </div>
@@ -386,7 +387,7 @@
     <!--start parnet-->
     <!--start script file-->
     <script src="javascript/jquery-3.6.0.min.js"></script>
-    <script src="javascript/main.js"></script>
+    <script src="javascript/main.js" type="module"></script>
     <!--end script file-->
 </body>
 </html>

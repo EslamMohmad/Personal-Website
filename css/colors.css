@@ -1,0 +1,31 @@
+.redColor-bgc {
+  background-color: var(--redColor) !important;
+}
+.blueColor-bgc {
+  background-color: var(--blueColor) !important;
+}
+.orangeColor-bgc {
+  background-color: var(--orangeColor) !important;
+}
+.yellowColor-bgc {
+  background-color: var(--yellowColor) !important;
+}
+.greenColor-bgc {
+  background-color: var(--greenColor) !important;
+}
+
+.redColor-c {
+  color: var(--redColor) !important;
+}
+.blueColor-c {
+  color: var(--blueColor) !important;
+}
+.orangeColor-c {
+  color: var(--orangeColor) !important;
+}
+.yellowColor-c {
+  color: var(--yellowColor) !important;
+}
+.greenColor-c {
+  color: var(--greenColor) !important;
+}

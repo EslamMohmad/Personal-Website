@@ -1,49 +1,49 @@
 /*start head row*/
-.parent .parnet-sections .section-two .head h4 {
+.parent .parent-sections .section-two .head h4 {
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-.parent .parnet-sections .section-two .head h4 span {
+.parent .parent-sections .section-two .head h4 span {
   color: var(--redColor);
 }
 
-.parent .parnet-sections .section-two .head p.text {
+.parent .parent-sections .section-two .head p.text {
   width: 85%;
   line-height: 1.8em;
   margin-bottom: 50px;
 }
 
-.parent .parnet-sections .section-two .head .content {
+.parent .parent-sections .section-two .head .content {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.one {
+.parent .parent-sections .section-two .head .content .bord.one {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.parent .parnet-sections .section-two .head .content .bord.one .data {
+.parent .parent-sections .section-two .head .content .bord.one .data {
   width: 47%;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.one .data p {
+.parent .parent-sections .section-two .head .content .bord.one .data p {
   padding: 0 0 15px 0;
   border-bottom: 1px solid var(--borderLight-light);
 }
 
-.parent .parnet-sections .section-two .head .content .bord.one .data p span {
+.parent .parent-sections .section-two .head .content .bord.one .data p span {
   margin-left: 10px;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.one .buttons {
+.parent .parent-sections .section-two .head .content .bord.one .buttons {
   margin-top: 30px;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.one .buttons button {
+.parent .parent-sections .section-two .head .content .bord.one .buttons button {
   background-color: var(--redColor);
   color: white;
   border: none;
@@ -56,11 +56,11 @@
   font-weight: 700;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two {
+.parent .parent-sections .section-two .head .content .bord.two {
   width: 37%;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two .progress {
+.parent .parent-sections .section-two .head .content .bord.two .progress {
   width: 100%;
   overflow: visible;
   flex-direction: column;
@@ -70,7 +70,7 @@
 }
 
 .parent
-  .parnet-sections
+  .parent-sections
   .section-two
   .head
   .content
@@ -83,7 +83,7 @@
 }
 
 .parent
-  .parnet-sections
+  .parent-sections
   .section-two
   .head
   .content
@@ -92,14 +92,14 @@
   margin-bottom: 25px;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two .progress p {
+.parent .parent-sections .section-two .head .content .bord.two .progress p {
   margin-bottom: 15px;
   font-size: 20px;
   text-transform: capitalize;
 }
 
 .parent
-  .parnet-sections
+  .parent-sections
   .section-two
   .head
   .content
@@ -111,29 +111,29 @@
 }
 /*start head row*/
 /*start foot row*/
-.parent .parnet-sections .section-two .row.foot {
+.parent .parent-sections .section-two .row.foot {
   flex-direction: row;
   display: flex;
   justify-content: space-between !important;
 }
 
-.parent .parnet-sections .section-two .foot .bord {
+.parent .parent-sections .section-two .foot .bord {
   width: 49%;
   margin-bottom: 40px;
 }
 
-.parent .parnet-sections .section-two .foot .bord h1 {
+.parent .parent-sections .section-two .foot .bord h1 {
   padding: 20px 0;
 }
 
-.parent .parnet-sections .section-two .foot .bord .content {
+.parent .parent-sections .section-two .foot .bord .content {
   box-shadow: 0 0 15px 0px var(--boxShadow);
   padding: 25px 40px;
   position: relative;
   border-radius: 5px;
 }
 
-.parent .parnet-sections .section-two .foot .bord .content hr {
+.parent .parent-sections .section-two .foot .bord .content hr {
   position: absolute;
   left: 20px;
   top: 50%;
@@ -145,7 +145,7 @@
 }
 
 .parent
-  .parnet-sections
+  .parent-sections
   .section-two
   .foot
   .bord
@@ -154,11 +154,11 @@
   margin-bottom: 60px;
 }
 
-.parent .parnet-sections .section-two .foot .bord .content .txt {
+.parent .parent-sections .section-two .foot .bord .content .txt {
   position: relative;
 }
 
-.parent .parnet-sections .section-two .foot .bord .content .txt .red-disc {
+.parent .parent-sections .section-two .foot .bord .content .txt .red-disc {
   position: absolute;
   left: -24.2px;
   width: 10px;
@@ -167,12 +167,12 @@
   background-color: var(--redColor);
 }
 
-.parent .parnet-sections .section-two .foot .bord .content .txt span i {
+.parent .parent-sections .section-two .foot .bord .content .txt span i {
   margin: 0 10px 15px 0;
   color: gray;
 }
 
-.parent .parnet-sections .section-two .foot .bord .content .txt p {
+.parent .parent-sections .section-two .foot .bord .content .txt p {
   margin-bottom: 0;
 }
 
