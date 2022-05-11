@@ -25,39 +25,39 @@
   width: 10px;
 }
 
-.parent
-  .parnet-sections[data-scrollbar-color="redColor"]
-  .section.section-four
+.parent[data-current-color="redColor"]
+  .parent-sections
+  .section-four
   .filter-list::-webkit-scrollbar-thumb {
   background: var(--redColor);
 }
 
-.parent
-  .parnet-sections[data-scrollbar-color="greenColor"]
-  .section.section-four
+.parent[data-current-color="greenColor"]
+  .parent-sections
+  .section-four
   .filter-list::-webkit-scrollbar-thumb {
   background: var(--greenColor);
 }
 
-.parent
-  .parnet-sections[data-scrollbar-color="YellowColor"]
-  .section.section-four
+.parent[data-current-color="yellowColor"]
+  .parent-sections
+  .section-four
   .filter-list::-webkit-scrollbar-thumb {
-  background: var(--YellowColor);
+  background: var(--yellowColor);
 }
 
-.parent
-  .parnet-sections[data-scrollbar-color="blueColor"]
-  .section.section-four
+.parent[data-current-color="blueColor"]
+  .parent-sections
+  .section-four
   .filter-list::-webkit-scrollbar-thumb {
   background: var(--blueColor);
 }
 
-.parent
-  .parnet-sections[data-scrollbar-color="OrangeColor"]
-  .section.section-four
+.parent[data-current-color="orangeColor"]
+  .parent-sections
+  .section-four
   .filter-list::-webkit-scrollbar-thumb {
-  background: var(--OrangeColor);
+  background: var(--orangeColor);
 }
 
 .parent .section-four .content .filter-list ul li {
@@ -65,6 +65,10 @@
   display: inline-block;
   cursor: pointer;
   padding-bottom: 5px;
+}
+
+.parent .section-four .content .filter-list ul li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .parent .section-four .content .filter-list ul li.active,

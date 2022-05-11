@@ -184,7 +184,6 @@ settingIcon.firstElementChild.addEventListener("click", function () {
   color.addEventListener("click", function () {
     Parent.setAttribute("data-current-color", this.classList[0]);
     coloringLivePreviewLink(this.classList[0]);
-    parentSections.setAttribute("data-scrollbar-color", this.classList[0]); //color scrollbar
     targetColorsClass(this.classList[0], elementsColors, "-c");
     targetColorsClass(this.classList[0], elementsbackColors, "-bgc");
     const globalColor = window.sessionStorage.setItem(
