@@ -36,12 +36,11 @@ mainWidth();
 window.addEventListener("resize", () => mainWidth());
 
 //set current age
-function setCurrentAge() {
+(function setCurrentAge() {
   const currentYear = new Date().getFullYear();
   const myBirthday = 1998;
   currentAge.innerHTML = currentYear - myBirthday;
-}
-setCurrentAge();
+})();
 
 //just fetching data
 const getData = async () => {
@@ -67,9 +66,9 @@ const getData = async () => {
 
 //multi events async function on templates children
 (async function () {
-  const data = await getData();
+  await getData();
   /**
-  - Declare data as vaiablue for waiting fetching data first 
+  - invoke getData() function for waiting fetching data first 
   - allow us to see templates.children 
    */
   [...templates.children].forEach((element) => {
@@ -128,6 +127,11 @@ const getData = async () => {
 
 //coloring Live Preview Link
 async function coloringLivePreviewLink(color) {
+  /*
+    we can't do effect on (Live Preview Links) even they
+    have background-color class
+    becase we created these from js
+  */
   await getData();
   const templateslinks = document.querySelectorAll(
     ".portofolio a.background-color"
@@ -145,14 +149,14 @@ function getCssValue(element, property) {
     .replace("px", "");
 }
 
-//toggle classes
+//toggle classes func
 function toggleClassess(element, classArr) {
   classArr.forEach((cls) => {
     element.classList.toggle(cls);
   });
 }
 
-//click on window to close coloring section
+//click on window to close coloring and nav-bar section
 window.addEventListener("click", function ({ target }) {
   //close coloring section
   const colorSettingWidth = getCssValue(settingIcon, "width");
@@ -166,7 +170,7 @@ window.addEventListener("click", function ({ target }) {
   }
 });
 
-//click on icon color setting
+//click on icon color's setting
 settingIcon.firstElementChild.addEventListener("click", function () {
   const colorSettingWidth = getCssValue(settingIcon, "width");
   const coloringSection = this.parentElement;
@@ -261,11 +265,8 @@ $(".parent .nav-bar .row ul li").on("click", function () {
     );
 });
 
-//check if sessionStorage is empty or not
-window.sessionStorage.length >= 1 && getsessionStorageValue();
-
 // use what was stored in sessionStorage
-function getsessionStorageValue() {
+(function getsessionStorageValue() {
   sessionStorage.removeItem("IsThisFirstTime_Log_From_LiveServer");
 
   let mood = window.sessionStorage.getItem("currentMood"),
@@ -290,7 +291,7 @@ function getsessionStorageValue() {
     "checked",
     "checked"
   );
-}
+})();
 
 //stop propagation
 function stopPropagation(target) {
