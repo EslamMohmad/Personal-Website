@@ -19,6 +19,8 @@ const navBarIcon = document.querySelector(".nav-bar .fas.fa-bars");
 const inputMood = document.querySelectorAll(".parent-sections .input input");
 const currentAge = document.getElementById("current-age");
 
+const currentGlobalColor = Parent.getAttribute("data-current-color");
+
 //set max-width to parent-sections
 function mainWidth() {
   const navBar = navBarIcon.parentElement.offsetParent;
@@ -26,6 +28,7 @@ function mainWidth() {
   let remainWidth = winWidth - getCssValue(navBar, "width");
   if (winWidth <= 1200) {
     navBar.className = "nav-bar aside active hide";
+    navBarIcon.className = `${currentGlobalColor}-c fas color icon fa-bars`;
     parentSections.style.width = winWidth + "px";
   } else {
     navBar.className = "nav-bar aside show";
@@ -159,14 +162,16 @@ function toggleClassess(element, classArr) {
 //click on window to close coloring and nav-bar section
 window.addEventListener("click", function ({ target }) {
   //close coloring section
-  const colorSettingWidth = getCssValue(settingIcon, "width");
-  settingIcon.style.right = `-${colorSettingWidth}px`;
-  settingIcon.firstElementChild.classList.remove("active");
+  if (settingIcon.firstElementChild.classList.contains("active")) {
+    const colorSettingWidth = getCssValue(settingIcon, "width");
+    settingIcon.style.right = `-${colorSettingWidth}px`;
+    settingIcon.firstElementChild.classList.remove("active");
+  }
 
   const { offsetParent: navBar } = sectionsLists[0].parentElement;
   if (!navBar.classList.contains("active")) {
-    toggleClassess(navBar, ["hide", "active", "show"]);
-    toggleClassess(navBarIcon, ["fa-times", "fa-bars"]);
+    navBar.className = "nav-bar aside active hide";
+    navBarIcon.className = `${currentGlobalColor}-c fas color icon fa-bars`;
   }
 });
 
@@ -190,10 +195,7 @@ settingIcon.firstElementChild.addEventListener("click", function () {
     coloringLivePreviewLink(this.classList[0]);
     targetColorsClass(this.classList[0], elementsColors, "-c");
     targetColorsClass(this.classList[0], elementsbackColors, "-bgc");
-    const globalColor = window.sessionStorage.setItem(
-      "currentColor",
-      this.classList[0]
-    );
+    window.sessionStorage.setItem("currentColor", this.classList[0]);
   });
 });
 
